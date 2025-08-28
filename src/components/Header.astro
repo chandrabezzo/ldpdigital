@@ -434,7 +434,122 @@ const currentPath = pathname.slice(1);
       width: 14px;
       height: 14px;
     }
+
+    .header {
+      padding: 0;
+      min-height: 56px;
+    }
+
+    .nav-content {
+      gap: var(--spacing-sm);
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    .brand-name {
+      font-size: 1rem;
+    }
+
+    .logo-text .tagline {
+      display: none;
+    }
+
+    .nav-links,
+    .nav-actions {
+      display: none !important;
+    }
+
+    .mobile-menu-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1100;
+      margin-left: auto;
+    }
+
+    .mobile-menu-btn span {
+      width: 28px;
+      height: 3px;
+      background: var(--neutral-800);
+      margin: 3px 0;
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .mobile-menu {
+      display: block;
+      position: fixed;
+      top: 56px;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid var(--neutral-200);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-110%);
+      transition: transform 0.3s ease;
+      z-index: 2000;
+    }
+
+    .mobile-menu.active {
+      transform: translateY(0);
+    }
+
+    .mobile-menu-content {
+      padding: 2rem 1.5rem 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .mobile-nav-link {
+      font-size: 1.1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--neutral-100);
+    }
+
+    .mobile-actions .btn-primary {
+      width: 100%;
+      padding: 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    .mobile-lang-switcher {
+      padding: 1rem 0;
+      border-top: 1px solid var(--neutral-100);
+      border-bottom: 1px solid var(--neutral-100);
+      margin: 1rem 0;
+    }
+
+    .mobile-lang-btn {
+      width: 100%;
+      justify-content: space-between;
+      background: var(--neutral-50);
+      border-color: var(--neutral-200);
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+
+    .mobile-lang-dropdown {
+      display: none;
+      position: static;
+      box-shadow: none;
+      border: 1px solid var(--neutral-200);
+      margin-top: 0.5rem;
+    }
+    .mobile-lang-dropdown.active {
+      display: block;
+    }
   }
+
+  
 </style>
 
 <script>
