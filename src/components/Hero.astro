@@ -248,6 +248,7 @@
     align-items: center;
     gap: var(--spacing-sm);
     animation: float 6s ease-in-out infinite;
+    z-index: 1;
   }
 
   .card-1 {
@@ -404,18 +405,7 @@
     }
 
     .floating-card {
-      padding: var(--spacing-sm);
-      font-size: 0.875rem;
-    }
-
-    .card-icon {
-      width: 32px;
-      height: 32px;
-    }
-
-    .card-icon svg {
-      width: 16px;
-      height: 16px;
+      display: none;
     }
 
     .scroll-indicator {
