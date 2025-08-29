@@ -1,0 +1,1984 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Portfolio - LDP Digital | Proyek Software Solutions & ERP Systems"
+  description="Lihat portfolio lengkap LDP Digital: proyek ERP systems, software custom, dan solusi teknologi untuk berbagai industri konstruksi dan manufaktur."
+>
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+      <div class="hero-background">
+        <img 
+          src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+          alt="Portfolio showcase"
+          loading="eager"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content fade-in-up">
+          <h1 data-i18n="portfolio.hero.title">Portfolio Kami</h1>
+          <p class="hero-subtitle" data-i18n="portfolio.hero.subtitle">Proyek-proyek sukses yang telah mengoptimalkan operasional bisnis klien</p>
+          <div class="hero-breadcrumb">
+            <a href="/" data-i18n="nav.home">Beranda</a>
+            <span>/</span>
+            <span data-i18n="nav.portfolio">Portfolio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Stats -->
+    <section class="portfolio-stats">
+      <div class="container">
+        <div class="stats-grid fade-in-up">
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label" data-i18n="portfolio.stats.projects">Proyek Selesai</div>
+            <div class="stat-description">Berbagai skala dan kompleksitas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">30+</div>
+            <div class="stat-label" data-i18n="portfolio.stats.clients">Klien Aktif</div>
+            <div class="stat-description">Dari startup hingga enterprise</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">95%</div>
+            <div class="stat-label" data-i18n="portfolio.stats.satisfaction">Tingkat Kepuasan</div>
+            <div class="stat-description">Berdasarkan feedback klien</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">40%</div>
+            <div class="stat-label" data-i18n="portfolio.stats.efficiency">Peningkatan Efisiensi</div>
+            <div class="stat-description">Rata-rata improvement</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+      <div class="container">
+        <div class="filter-header fade-in-up">
+          <h2 data-i18n="portfolio.filter.title">Proyek Terpilih</h2>
+          <p data-i18n="portfolio.filter.subtitle">Filter berdasarkan kategori untuk melihat proyek yang relevan</p>
+        </div>
+        
+        <div class="filter-tabs fade-in-up">
+          <button class="filter-tab active" data-filter="all" data-i18n="portfolio.filter.all">Semua Proyek</button>
+          <button class="filter-tab" data-filter="erp" data-i18n="portfolio.filter.erp">Sistem ERP</button>
+          <button class="filter-tab" data-filter="custom" data-i18n="portfolio.filter.custom">Software Custom</button>
+          <button class="filter-tab" data-filter="website" data-i18n="portfolio.filter.website">Website</button>
+          <button class="filter-tab" data-filter="mobile" data-i18n="portfolio.filter.mobile">Mobile App</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+      <div class="container">
+        <div class="portfolio-grid">
+          <!-- ERP Projects -->
+          <div class="portfolio-item fade-in-up" data-category="erp">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Construction ERP System">
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <button class="portfolio-btn view-btn" data-project="construction-erp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">ERP System</div>
+              <h3>Sistem ERP Konstruksi Terintegrasi</h3>
+              <p>Platform manajemen proyek konstruksi yang mengintegrasikan keuangan, inventory, dan SDM dalam satu sistem.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="portfolio-results">
+                <div class="result-item">
+                  <span class="result-value">40%</span>
+                  <span class="result-label">Efisiensi Meningkat</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">60%</span>
+                  <span class="result-label">Waktu Laporan Berkurang</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item fade-in-up" data-category="erp">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Manufacturing ERP">
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <button class="portfolio-btn view-btn" data-project="manufacturing-erp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">ERP System</div>
+              <h3>ERP Manufaktur & Production Control</h3>
+              <p>Sistem kontrol produksi real-time dengan tracking material, quality control, dan manajemen workforce.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <div class="portfolio-results">
+                <div class="result-item">
+                  <span class="result-value">35%</span>
+                  <span class="result-label">Waste Reduction</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">50%</span>
+                  <span class="result-label">Faster Reporting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Software Projects -->
+          <div class="portfolio-item fade-in-up" data-category="custom">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Inventory Management System">
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <button class="portfolio-btn view-btn" data-project="inventory-system">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Custom Software</div>
+              <h3>Smart Inventory Management</h3>
+              <p>Sistem manajemen inventory dengan AI prediction untuk optimasi stock dan automated reorder system.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Redis</span>
+              </div>
+              <div class="portfolio-results">
+                <div class="result-item">
+                  <span class="result-value">25%</span>
+                  <span class="result-label">Cost Reduction</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">90%</span>
+                  <span class="result-label">Stock Accuracy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item fade-in-up" data-category="custom">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CRM System">
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <button class="portfolio-btn view-btn" data-project="crm-system">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Custom Software</div>
+              <h3>Customer Relationship Management</h3>
+              <p>CRM system dengan lead tracking, sales pipeline, dan automated marketing untuk meningkatkan konversi.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="portfolio-results">
+                <div class="result-item">
+                  <span class="result-value">45%</span>
+                  <span class="result-label">Lead Conversion</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">30%</span>
+                  <span class="result-label">Sales Increase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Website Projects -->
+          <div class="portfolio-item fade-in-up" data-category="website">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Platform">
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <button class="portfolio-btn view-btn" data-project="ecommerce-platform">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">E-commerce</div>
+              <h3>Platform E-commerce B2B</h3>
+              <p>Platform e-commerce khusus B2B dengan sistem quotation, bulk ordering, dan integrasi payment gateway.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Stripe</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+              <div class="portfolio-results">
+                <div class="result-item">
+                  <span class="result-value">200%</span>
+                  <span class="result-label">Online Sales Growth</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">70%</span>
+                  <span class="result-label">Order Processing Speed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item fade-in-up" data-category="website">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Corporate Website">
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <button class="portfolio-btn view-btn" data-project="corporate-website">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Corporate Website</div>
+              <h3>Website Perusahaan Konstruksi</h3>
+              <p>Website corporate dengan portfolio showcase, project gallery, dan sistem inquiry terintegrasi CRM.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">Astro</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">Netlify</span>
+              </div>
+              <div class="portfolio-results">
+                <div class="result-item">
+                  <span class="result-value">300%</span>
+                  <span class="result-label">Web Traffic Increase</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">85%</span>
+                  <span class="result-label">Lead Quality Improvement</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile App Projects -->
+          <div class="portfolio-item fade-in-up" data-category="mobile">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Field Management App">
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <button class="portfolio-btn view-btn" data-project="field-app">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Mobile App</div>
+              <h3>Field Management Mobile App</h3>
+              <p>Aplikasi mobile untuk manajemen lapangan dengan GPS tracking, photo reporting, dan offline capability.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Maps API</span>
+              </div>
+              <div class="portfolio-results">
+                <div class="result-item">
+                  <span class="result-value">60%</span>
+                  <span class="result-label">Faster Reporting</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">100%</span>
+                  <span class="result-label">Real-time Visibility</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item fade-in-up" data-category="mobile">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logistics App">
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <button class="portfolio-btn view-btn" data-project="logistics-app">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    Lihat Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Mobile App</div>
+              <h3>Logistics & Delivery Tracking</h3>
+              <p>Aplikasi tracking pengiriman dengan real-time GPS, proof of delivery, dan customer notification system.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Google Maps</span>
+              </div>
+              <div class="portfolio-results">
+                <div class="result-item">
+                  <span class="result-value">80%</span>
+                  <span class="result-label">Delivery Accuracy</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">50%</span>
+                  <span class="result-label">Customer Complaints Reduced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="case-studies">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2 data-i18n="portfolio.case.title">Case Study Mendalam</h2>
+          <p data-i18n="portfolio.case.subtitle">Analisis detail implementasi dan hasil yang dicapai</p>
+        </div>
+
+        <div class="case-study-featured fade-in-up">
+          <div class="case-study-content">
+            <div class="case-study-header">
+              <div class="case-study-meta">
+                <span class="case-study-category">ERP Implementation</span>
+                <span class="case-study-duration">6 Bulan Implementasi</span>
+              </div>
+              <h3>Transformasi Digital Perusahaan Konstruksi Besar</h3>
+              <p class="case-study-description">
+                Implementasi sistem ERP komprehensif untuk perusahaan konstruksi dengan 200+ karyawan, 
+                mengelola 15+ proyek simultan dengan budget total Rp 500+ miliar.
+              </p>
+            </div>
+
+            <div class="case-study-details">
+              <div class="detail-section">
+                <h4>Tantangan</h4>
+                <ul>
+                  <li>Manajemen proyek manual dengan Excel</li>
+                  <li>Kesulitan tracking material dan equipment</li>
+                  <li>Laporan keuangan tidak real-time</li>
+                  <li>Komunikasi tim tidak terintegrasi</li>
+                </ul>
+              </div>
+
+              <div class="detail-section">
+                <h4>Solusi</h4>
+                <ul>
+                  <li>Sistem ERP terintegrasi dengan modul lengkap</li>
+                  <li>Mobile app untuk field reporting</li>
+                  <li>Dashboard real-time untuk management</li>
+                  <li>Automated workflow dan approval system</li>
+                </ul>
+              </div>
+
+              <div class="detail-section">
+                <h4>Hasil</h4>
+                <div class="results-grid">
+                  <div class="result-card">
+                    <div class="result-number">40%</div>
+                    <div class="result-text">Peningkatan efisiensi operasional</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-number">60%</div>
+                    <div class="result-text">Pengurangan waktu pembuatan laporan</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-number">30%</div>
+                    <div class="result-text">Penghematan biaya operasional</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-number">95%</div>
+                    <div class="result-text">Akurasi data inventory</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study-visual">
+            <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Construction project management">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2 data-i18n="portfolio.testimonials.title">Testimoni Klien</h2>
+          <p data-i18n="portfolio.testimonials.subtitle">Pengalaman nyata klien yang telah merasakan manfaat solusi kami</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in-up">
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                </svg>
+              </div>
+              <p>
+                "Implementasi ERP dari LDP Digital benar-benar mengubah cara kami mengelola proyek. 
+                Sekarang semua data terintegrasi dan laporan bisa dibuat dalam hitungan menit, bukan hari."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <div class="author-name">Budi Santoso</div>
+                <div class="author-title">Project Manager</div>
+                <div class="author-company">PT. Konstruksi Mandiri</div>
+              </div>
+              <div class="company-logo">
+                <div class="logo-placeholder">KM</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                </svg>
+              </div>
+              <p>
+                "Software inventory management yang dikembangkan LDP Digital sangat membantu kami mengoptimalkan 
+                stock dan mengurangi waste. ROI tercapai dalam 8 bulan."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <div class="author-name">Sari Wijaya</div>
+                <div class="author-title">Operations Director</div>
+                <div class="author-company">PT. Manufaktur Sejahtera</div>
+              </div>
+              <div class="company-logo">
+                <div class="logo-placeholder">MS</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                </svg>
+              </div>
+              <p>
+                "Tim LDP Digital sangat profesional dan memahami kebutuhan industri kami. 
+                Support yang diberikan juga excellent, respon cepat dan solusi tepat sasaran."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <div class="author-name">Ahmad Rahman</div>
+                <div class="author-title">IT Manager</div>
+                <div class="author-company">PT. Teknologi Maju</div>
+              </div>
+              <div class="company-logo">
+                <div class="logo-placeholder">TM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="technologies">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2 data-i18n="portfolio.tech.title">Teknologi yang Kami Gunakan</h2>
+          <p data-i18n="portfolio.tech.subtitle">Stack teknologi modern untuk membangun solusi yang scalable dan maintainable</p>
+        </div>
+
+        <div class="tech-categories">
+          <div class="tech-category fade-in-up">
+            <h3>Frontend</h3>
+            <div class="tech-items">
+              <div class="tech-item">
+                <div class="tech-icon">⚛️</div>
+                <span>React</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">🟢</div>
+                <span>Vue.js</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">🅰️</div>
+                <span>Angular</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">⚡</div>
+                <span>Next.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category fade-in-up">
+            <h3>Backend</h3>
+            <div class="tech-items">
+              <div class="tech-item">
+                <div class="tech-icon">🟢</div>
+                <span>Node.js</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">🐍</div>
+                <span>Python</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">☕</div>
+                <span>Java</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">🔷</div>
+                <span>.NET</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category fade-in-up">
+            <h3>Database</h3>
+            <div class="tech-items">
+              <div class="tech-item">
+                <div class="tech-icon">🐘</div>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">🍃</div>
+                <span>MongoDB</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">🔶</div>
+                <span>MySQL</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">⚡</div>
+                <span>Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-category fade-in-up">
+            <h3>Cloud & DevOps</h3>
+            <div class="tech-items">
+              <div class="tech-item">
+                <div class="tech-icon">☁️</div>
+                <span>AWS</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">🔵</div>
+                <span>Azure</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">🐳</div>
+                <span>Docker</span>
+              </div>
+              <div class="tech-item">
+                <div class="tech-icon">⚙️</div>
+                <span>Kubernetes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content fade-in-up">
+          <h2 data-i18n="portfolio.cta.title">Siap Memulai Proyek Anda?</h2>
+          <p data-i18n="portfolio.cta.description">
+            Bergabunglah dengan klien-klien kami yang telah merasakan manfaat transformasi digital. 
+            Konsultasikan kebutuhan software perusahaan Anda sekarang juga.
+          </p>
+          <div class="cta-actions">
+            <a href="/contact" class="btn btn-primary" data-i18n="portfolio.cta.consultation">Konsultasi Gratis</a>
+            <a href="/services" class="btn btn-secondary" data-i18n="portfolio.cta.services">Lihat Layanan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-body" id="modalBody">
+        <!-- Content will be dynamically loaded -->
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  main {
+    padding-top: 0;
+  }
+
+  /* Portfolio Hero */
+  .portfolio-hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 102, 204, 0.8);
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.9;
+  }
+
+  .hero-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+
+  .hero-breadcrumb a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  .hero-breadcrumb a:hover {
+    opacity: 0.8;
+  }
+
+  /* Portfolio Stats */
+  .portfolio-stats {
+    padding: var(--spacing-2xl) 0;
+    background: var(--neutral-50);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .stat-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition);
+  }
+
+  .stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    line-height: 1;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .stat-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--neutral-800);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .stat-description {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+  }
+
+  /* Portfolio Filter */
+  .portfolio-filter {
+    padding: var(--spacing-xl) 0;
+    background: white;
+  }
+
+  .filter-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .filter-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .filter-header p {
+    font-size: 1.25rem;
+    color: var(--neutral-600);
+  }
+
+  .filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+  }
+
+  .filter-tab {
+    padding: 0.75rem 1.5rem;
+    background: var(--neutral-100);
+    color: var(--neutral-600);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+  }
+
+  .filter-tab:hover,
+  .filter-tab.active {
+    background: var(--primary-blue);
+    color: white;
+  }
+
+  /* Portfolio Grid */
+  .portfolio-grid-section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .portfolio-item {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+  }
+
+  .portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .portfolio-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+
+  .portfolio-item:hover .portfolio-image img {
+    transform: scale(1.1);
+  }
+
+  .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 102, 204, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+  .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+  }
+
+  .portfolio-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: var(--primary-blue);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+
+  .portfolio-btn:hover {
+    background: var(--neutral-100);
+  }
+
+  .portfolio-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .portfolio-content {
+    padding: var(--spacing-lg);
+  }
+
+  .portfolio-category {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .portfolio-content h3 {
+    font-size: 1.375rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--neutral-800);
+  }
+
+  .portfolio-content p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+  }
+
+  .portfolio-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .tech-tag {
+    background: var(--neutral-100);
+    color: var(--neutral-700);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .portfolio-results {
+    display: flex;
+    gap: var(--spacing-md);
+  }
+
+  .result-item {
+    text-align: center;
+    flex: 1;
+  }
+
+  .result-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--success-green);
+    line-height: 1;
+  }
+
+  .result-label {
+    font-size: 0.75rem;
+    color: var(--neutral-600);
+    margin-top: var(--spacing-xs);
+  }
+
+  /* Case Studies */
+  .case-studies {
+    padding: var(--spacing-2xl) 0;
+    background: var(--neutral-50);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .section-header p {
+    font-size: 1.25rem;
+    color: var(--neutral-600);
+  }
+
+  .case-study-featured {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .case-study-content {
+    padding: var(--spacing-2xl);
+  }
+
+  .case-study-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  .case-study-category {
+    background: var(--primary-blue);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .case-study-duration {
+    background: var(--accent-orange);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .case-study-header h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--neutral-800);
+  }
+
+  .case-study-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    color: var(--neutral-600);
+  }
+
+  .case-study-details {
+    display: grid;
+    gap: var(--spacing-lg);
+  }
+
+  .detail-section h4 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-blue);
+  }
+
+  .detail-section ul {
+    list-style: none;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .detail-section ul li {
+    position: relative;
+    padding-left: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    color: var(--neutral-600);
+  }
+
+  .detail-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-blue);
+    font-weight: bold;
+  }
+
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .result-card {
+    background: var(--neutral-50);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+
+  .result-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--success-green);
+    line-height: 1;
+  }
+
+  .result-text {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+    margin-top: var(--spacing-xs);
+  }
+
+  .case-study-visual {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .case-study-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .testimonial-card {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .testimonial-content {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .quote-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .quote-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .testimonial-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: var(--neutral-700);
+    margin: 0;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .author-name {
+    font-weight: 600;
+    color: var(--neutral-800);
+    margin-bottom: 2px;
+  }
+
+  .author-title {
+    font-size: 0.875rem;
+    color: var(--primary-blue);
+    margin-bottom: 2px;
+  }
+
+  .author-company {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    background: var(--neutral-100);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-placeholder {
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 0.875rem;
+  }
+
+  /* Technologies */
+  .technologies {
+    padding: var(--spacing-2xl) 0;
+    background: var(--neutral-50);
+  }
+
+  .tech-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+  }
+
+  .tech-category {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+
+  .tech-category h3 {
+    font-size: 1.375rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-blue);
+    text-align: center;
+  }
+
+  .tech-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm);
+    background: var(--neutral-50);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+  }
+
+  .tech-item:hover {
+    background: var(--primary-blue);
+    color: white;
+  }
+
+  .tech-icon {
+    font-size: 1.25rem;
+    width: 24px;
+    text-align: center;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
+    color: white;
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: white;
+  }
+
+  .cta-content p {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+    line-height: 1.6;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+
+  .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-content {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    margin: var(--spacing-md);
+    width: 100%;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 40px;
+    height: 40px;
+    background: var(--neutral-100);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    z-index: 1;
+  }
+
+  .modal-close:hover {
+    background: var(--neutral-200);
+  }
+
+  .modal-close svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal-body {
+    padding: var(--spacing-2xl);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .case-study-featured {
+      grid-template-columns: 1fr;
+    }
+
+    .case-study-visual {
+      height: 300px;
+    }
+
+    .results-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .filter-header h2 {
+      font-size: 2rem;
+    }
+
+    .filter-tabs {
+      gap: var(--spacing-xs);
+    }
+
+    .filter-tab {
+      padding: 0.625rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+
+    .portfolio-item {
+      margin: 0 var(--spacing-sm);
+    }
+
+    .portfolio-content {
+      padding: var(--spacing-md);
+    }
+
+    .portfolio-content h3 {
+      font-size: 1.25rem;
+    }
+
+    .portfolio-results {
+      gap: var(--spacing-sm);
+    }
+
+    .result-value {
+      font-size: 1.25rem;
+    }
+
+    .result-label {
+      font-size: 0.7rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--spacing-md);
+    }
+
+    .stat-card {
+      padding: var(--spacing-lg);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+    }
+
+    .case-study-content {
+      padding: var(--spacing-lg);
+    }
+
+    .case-study-header h3 {
+      font-size: 1.5rem;
+    }
+
+    .case-study-description {
+      font-size: 1rem;
+    }
+
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+
+    .testimonial-card {
+      padding: var(--spacing-lg);
+    }
+
+    .testimonial-content p {
+      font-size: 1rem;
+    }
+
+    .tech-categories {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+
+    .tech-items {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+
+    .cta-content p {
+      font-size: 1.125rem;
+    }
+
+    .cta-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cta-actions .btn {
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .modal-content {
+      margin: var(--spacing-sm);
+      max-height: 95vh;
+    }
+
+    .modal-body {
+      padding: var(--spacing-lg);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.75rem;
+    }
+
+    .filter-header h2 {
+      font-size: 1.75rem;
+    }
+
+    .filter-tabs {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .filter-tab {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .portfolio-item {
+      margin: 0;
+    }
+
+    .portfolio-content {
+      padding: var(--spacing-sm);
+    }
+
+    .portfolio-content h3 {
+      font-size: 1.125rem;
+    }
+
+    .portfolio-content p {
+      font-size: 0.9rem;
+    }
+
+    .portfolio-results {
+      flex-direction: column;
+      gap: var(--spacing-xs);
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-sm);
+    }
+
+    .stat-card {
+      padding: var(--spacing-md);
+    }
+
+    .stat-number {
+      font-size: 2rem;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+    }
+
+    .stat-description {
+      font-size: 0.8rem;
+    }
+
+    .case-study-content {
+      padding: var(--spacing-md);
+    }
+
+    .case-study-header h3 {
+      font-size: 1.25rem;
+    }
+
+    .case-study-description {
+      font-size: 0.9rem;
+    }
+
+    .results-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .result-card {
+      padding: var(--spacing-sm);
+    }
+
+    .result-number {
+      font-size: 1.5rem;
+    }
+
+    .result-text {
+      font-size: 0.8rem;
+    }
+
+    .testimonial-card {
+      padding: var(--spacing-md);
+    }
+
+    .testimonial-content p {
+      font-size: 0.9rem;
+    }
+
+    .tech-category {
+      padding: var(--spacing-lg);
+    }
+
+    .tech-category h3 {
+      font-size: 1.25rem;
+    }
+
+    .tech-item {
+      padding: var(--spacing-xs);
+      font-size: 0.875rem;
+    }
+
+    .tech-icon {
+      font-size: 1rem;
+      width: 20px;
+    }
+  }
+</style>
+
+<script>
+  import { getCurrentLanguage, getTranslation } from '../utils/i18n';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Initialize language
+    const currentLang = getCurrentLanguage();
+    updatePageLanguage(currentLang);
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all fade-in elements
+    const fadeElements = document.querySelectorAll('.fade-in-up');
+    fadeElements.forEach(el => observer.observe(el));
+
+    // Portfolio filter functionality
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const filter = tab.dataset.filter;
+        
+        // Update active tab
+        filterTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // Filter portfolio items
+        portfolioItems.forEach(item => {
+          const category = item.dataset.category;
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'translateY(0)';
+            }, 100);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Modal functionality
+    const modal = document.getElementById('projectModal');
+    const modalBody = document.getElementById('modalBody');
+    const modalClose = document.getElementById('modalClose');
+    const viewBtns = document.querySelectorAll('.view-btn');
+
+    // Project details data
+    const projectDetails = {
+      'construction-erp': {
+        title: 'Sistem ERP Konstruksi Terintegrasi',
+        category: 'ERP System',
+        duration: '8 Bulan',
+        client: 'PT. Konstruksi Mandiri',
+        description: 'Implementasi sistem ERP komprehensif untuk perusahaan konstruksi besar dengan 200+ karyawan dan 15+ proyek aktif.',
+        challenge: 'Perusahaan menghadapi kesulitan dalam koordinasi antar departemen, tracking material, dan pembuatan laporan yang memakan waktu berhari-hari.',
+        solution: 'Pengembangan sistem ERP terintegrasi dengan modul project management, inventory, finance, HR, dan mobile app untuk field reporting.',
+        results: [
+          { metric: '40%', description: 'Peningkatan efisiensi operasional' },
+          { metric: '60%', description: 'Pengurangan waktu pembuatan laporan' },
+          { metric: '30%', description: 'Penghematan biaya operasional' },
+          { metric: '95%', description: 'Akurasi data inventory' }
+        ],
+        technologies: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'AWS', 'React Native']
+      },
+      'manufacturing-erp': {
+        title: 'ERP Manufaktur & Production Control',
+        category: 'ERP System',
+        duration: '6 Bulan',
+        client: 'PT. Manufaktur Sejahtera',
+        description: 'Sistem kontrol produksi real-time dengan tracking material, quality control, dan manajemen workforce.',
+        challenge: 'Kesulitan monitoring produksi real-time, waste yang tinggi, dan koordinasi shift yang tidak efisien.',
+        solution: 'ERP system dengan real-time production monitoring, automated quality control, dan workforce management.',
+        results: [
+          { metric: '35%', description: 'Pengurangan waste produksi' },
+          { metric: '50%', description: 'Peningkatan kecepatan reporting' },
+          { metric: '25%', description: 'Efisiensi workforce' },
+          { metric: '90%', description: 'Quality control accuracy' }
+        ],
+        technologies: ['Vue.js', 'Python', 'MongoDB', 'Docker', 'Azure', 'IoT Sensors']
+      }
+    };
+
+    viewBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const projectId = btn.dataset.project;
+        const project = projectDetails[projectId];
+        
+        if (project) {
+          modalBody.innerHTML = `
+            <div class="modal-project">
+              <div class="modal-header">
+                <div class="modal-meta">
+                  <span class="modal-category">${project.category}</span>
+                  <span class="modal-duration">${project.duration}</span>
+                </div>
+                <h2>${project.title}</h2>
+                <p class="modal-client">Klien: ${project.client}</p>
+                <p class="modal-description">${project.description}</p>
+              </div>
+              
+              <div class="modal-sections">
+                <div class="modal-section">
+                  <h3>Tantangan</h3>
+                  <p>${project.challenge}</p>
+                </div>
+                
+                <div class="modal-section">
+                  <h3>Solusi</h3>
+                  <p>${project.solution}</p>
+                </div>
+                
+                <div class="modal-section">
+                  <h3>Hasil yang Dicapai</h3>
+                  <div class="modal-results">
+                    ${project.results.map(result => `
+                      <div class="modal-result">
+                        <div class="modal-result-number">${result.metric}</div>
+                        <div class="modal-result-text">${result.description}</div>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+                
+                <div class="modal-section">
+                  <h3>Teknologi yang Digunakan</h3>
+                  <div class="modal-tech">
+                    ${project.technologies.map(tech => `
+                      <span class="modal-tech-tag">${tech}</span>
+                    `).join('')}
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    // Close modal
+    modalClose?.addEventListener('click', closeModal);
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    function closeModal() {
+      modal?.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Listen for language changes
+    window.addEventListener('languageChanged', (e) => {
+      updatePageLanguage(e.detail);
+    });
+  });
+
+  function updatePageLanguage(lang) {
+    // Update all elements with data-i18n attribute
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(element => {
+      const key = element.getAttribute('data-i18n');
+      if (key) {
+        element.textContent = getTranslation(key, lang);
+      }
+    });
+  }
+</script>
+
+<style>
+  /* Modal Styles */
+  .modal-project {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .modal-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--neutral-800);
+  }
+
+  .modal-meta {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  .modal-category {
+    background: var(--primary-blue);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .modal-duration {
+    background: var(--accent-orange);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .modal-client {
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .modal-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--neutral-600);
+  }
+
+  .modal-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .modal-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-blue);
+  }
+
+  .modal-section p {
+    line-height: 1.6;
+    color: var(--neutral-600);
+  }
+
+  .modal-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .modal-result {
+    background: var(--neutral-50);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+
+  .modal-result-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--success-green);
+    line-height: 1;
+  }
+
+  .modal-result-text {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+    margin-top: var(--spacing-xs);
+  }
+
+  .modal-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  .modal-tech-tag {
+    background: var(--neutral-100);
+    color: var(--neutral-700);
+    padding: 6px 12px;
+    border-radius: var(--border-radius);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .modal-results {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .modal-result {
+      padding: var(--spacing-sm);
+    }
+
+    .modal-result-number {
+      font-size: 1.5rem;
+    }
+
+    .modal-result-text {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .modal-header h2 {
+      font-size: 1.5rem;
+    }
+
+    .modal-description {
+      font-size: 1rem;
+    }
+
+    .modal-section h3 {
+      font-size: 1.125rem;
+    }
+
+    .modal-results {
+      grid-template-columns: 1fr;
+    }
+
+    .modal-tech {
+      justify-content: center;
+    }
+  }
+</style>
