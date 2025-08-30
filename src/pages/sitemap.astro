@@ -1,0 +1,896 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Sitemap - LDP Digital | Peta Situs Website"
+  description="Sitemap lengkap website LDP Digital dengan semua halaman layanan, portfolio, dan informasi perusahaan."
+>
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="sitemap-hero">
+      <div class="container">
+        <div class="hero-content fade-in-up">
+          <h1>Sitemap</h1>
+          <p class="hero-subtitle">Peta lengkap semua halaman dan konten di website LDP Digital</p>
+          <div class="hero-breadcrumb">
+            <a href="/">Beranda</a>
+            <span>/</span>
+            <span>Sitemap</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sitemap Content -->
+    <section class="sitemap-content">
+      <div class="container">
+        <div class="sitemap-grid">
+          <!-- Main Pages -->
+          <div class="sitemap-section fade-in-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9,22 9,12 15,12 15,22"/>
+                </svg>
+              </div>
+              <h2>Halaman Utama</h2>
+            </div>
+            <div class="sitemap-links">
+              <a href="/" class="sitemap-link">
+                <div class="link-icon">🏠</div>
+                <div class="link-content">
+                  <h3>Beranda</h3>
+                  <p>Halaman utama dengan overview layanan dan company profile</p>
+                </div>
+              </a>
+              <a href="/about" class="sitemap-link">
+                <div class="link-icon">👥</div>
+                <div class="link-content">
+                  <h3>Tentang Kami</h3>
+                  <p>Sejarah perusahaan, visi misi, tim, dan nilai-nilai inti</p>
+                </div>
+              </a>
+              <a href="/services" class="sitemap-link">
+                <div class="link-icon">⚙️</div>
+                <div class="link-content">
+                  <h3>Layanan</h3>
+                  <p>Detail lengkap semua layanan software development</p>
+                </div>
+              </a>
+              <a href="/portfolio" class="sitemap-link">
+                <div class="link-icon">💼</div>
+                <div class="link-content">
+                  <h3>Portfolio</h3>
+                  <p>Showcase proyek-proyek yang telah diselesaikan</p>
+                </div>
+              </a>
+              <a href="/contact" class="sitemap-link">
+                <div class="link-icon">📞</div>
+                <div class="link-content">
+                  <h3>Kontak</h3>
+                  <p>Form konsultasi dan informasi kontak lengkap</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Services Pages -->
+          <div class="sitemap-section fade-in-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h2>Layanan Detail</h2>
+            </div>
+            <div class="sitemap-links">
+              <a href="/services#erp" class="sitemap-link">
+                <div class="link-icon">🏗️</div>
+                <div class="link-content">
+                  <h3>Sistem ERP</h3>
+                  <p>Enterprise Resource Planning terintegrasi</p>
+                </div>
+              </a>
+              <a href="/services#custom" class="sitemap-link">
+                <div class="link-icon">💻</div>
+                <div class="link-content">
+                  <h3>Software Custom</h3>
+                  <p>Aplikasi khusus sesuai kebutuhan bisnis</p>
+                </div>
+              </a>
+              <a href="/services#consulting" class="sitemap-link">
+                <div class="link-icon">💡</div>
+                <div class="link-content">
+                  <h3>Konsultasi Digital</h3>
+                  <p>Analisis proses bisnis dan transformasi digital</p>
+                </div>
+              </a>
+              <a href="/services#website" class="sitemap-link">
+                <div class="link-icon">🌐</div>
+                <div class="link-content">
+                  <h3>Pengembangan Website</h3>
+                  <p>Website profesional dan e-commerce</p>
+                </div>
+              </a>
+              <a href="/services#mobile" class="sitemap-link">
+                <div class="link-icon">📱</div>
+                <div class="link-content">
+                  <h3>Aplikasi Mobile</h3>
+                  <p>Mobile apps untuk iOS dan Android</p>
+                </div>
+              </a>
+              <a href="/services#maintenance" class="sitemap-link">
+                <div class="link-icon">🛠️</div>
+                <div class="link-content">
+                  <h3>Maintenance & Support</h3>
+                  <p>Pemeliharaan sistem dan dukungan teknis</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Industries -->
+          <div class="sitemap-section fade-in-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <h2>Industri</h2>
+            </div>
+            <div class="sitemap-links">
+              <a href="/industries/construction" class="sitemap-link">
+                <div class="link-icon">🏗️</div>
+                <div class="link-content">
+                  <h3>Konstruksi & Engineering</h3>
+                  <p>Solusi khusus untuk industri konstruksi</p>
+                </div>
+              </a>
+              <a href="/industries/manufacturing" class="sitemap-link">
+                <div class="link-icon">🏭</div>
+                <div class="link-content">
+                  <h3>Manufaktur</h3>
+                  <p>Sistem produksi dan quality control</p>
+                </div>
+              </a>
+              <a href="/industries/retail" class="sitemap-link">
+                <div class="link-icon">🛒</div>
+                <div class="link-content">
+                  <h3>Retail & E-commerce</h3>
+                  <p>Point of sale dan manajemen inventory</p>
+                </div>
+              </a>
+              <a href="/industries/healthcare" class="sitemap-link">
+                <div class="link-icon">🏥</div>
+                <div class="link-content">
+                  <h3>Healthcare</h3>
+                  <p>Sistem manajemen rumah sakit dan klinik</p>
+                </div>
+              </a>
+              <a href="/industries/education" class="sitemap-link">
+                <div class="link-icon">🎓</div>
+                <div class="link-content">
+                  <h3>Pendidikan</h3>
+                  <p>Learning management dan administrasi akademik</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Legal Pages -->
+          <div class="sitemap-section fade-in-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10,9 9,9 8,9"/>
+                </svg>
+              </div>
+              <h2>Halaman Legal</h2>
+            </div>
+            <div class="sitemap-links">
+              <a href="/privacy" class="sitemap-link">
+                <div class="link-icon">🔒</div>
+                <div class="link-content">
+                  <h3>Kebijakan Privasi</h3>
+                  <p>Perlindungan data pribadi dan informasi pengguna</p>
+                </div>
+              </a>
+              <a href="/terms" class="sitemap-link">
+                <div class="link-icon">📋</div>
+                <div class="link-content">
+                  <h3>Syarat & Ketentuan</h3>
+                  <p>Ketentuan penggunaan layanan dan kerjasama</p>
+                </div>
+              </a>
+              <a href="/sitemap" class="sitemap-link current">
+                <div class="link-icon">🗺️</div>
+                <div class="link-content">
+                  <h3>Sitemap</h3>
+                  <p>Peta navigasi lengkap website</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Resources -->
+          <div class="sitemap-section fade-in-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </div>
+              <h2>Resources</h2>
+            </div>
+            <div class="sitemap-links">
+              <a href="/blog" class="sitemap-link">
+                <div class="link-icon">📝</div>
+                <div class="link-content">
+                  <h3>Blog</h3>
+                  <p>Artikel tentang teknologi dan best practices</p>
+                </div>
+              </a>
+              <a href="/case-studies" class="sitemap-link">
+                <div class="link-icon">📊</div>
+                <div class="link-content">
+                  <h3>Case Studies</h3>
+                  <p>Studi kasus implementasi proyek-proyek sukses</p>
+                </div>
+              </a>
+              <a href="/downloads" class="sitemap-link">
+                <div class="link-icon">📥</div>
+                <div class="link-content">
+                  <h3>Downloads</h3>
+                  <p>Brochure, whitepaper, dan materi marketing</p>
+                </div>
+              </a>
+              <a href="/faq" class="sitemap-link">
+                <div class="link-icon">❓</div>
+                <div class="link-content">
+                  <h3>FAQ</h3>
+                  <p>Pertanyaan yang sering diajukan</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="sitemap-section fade-in-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2 2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+              </div>
+              <h2>Quick Actions</h2>
+            </div>
+            <div class="quick-actions">
+              <a href="/contact" class="action-card">
+                <div class="action-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <h3>Konsultasi Gratis</h3>
+                <p>Mulai diskusi tentang kebutuhan software Anda</p>
+              </a>
+              <a href="tel:+6221XXXXXXX" class="action-card">
+                <div class="action-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <h3>Hubungi Langsung</h3>
+                <p>Telepon untuk konsultasi cepat</p>
+              </a>
+              <a href="https://wa.me/6281XXXXXXXX" class="action-card" target="_blank">
+                <div class="action-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087"/>
+                  </svg>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>Chat langsung untuk respon cepat</p>
+              </a>
+              <a href="mailto:info@ldpdigital.com" class="action-card">
+                <div class="action-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <h3>Email</h3>
+                <p>Kirim email untuk inquiry detail</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site Statistics -->
+        <div class="site-stats fade-in-up">
+          <div class="stats-header">
+            <h2>Statistik Website</h2>
+            <p>Informasi lengkap tentang konten website LDP Digital</p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">8</div>
+              <div class="stat-label">Halaman Utama</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">6</div>
+              <div class="stat-label">Layanan Detail</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">5</div>
+              <div class="stat-label">Industri Focus</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Portfolio Projects</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Functionality -->
+        <div class="site-search fade-in-up">
+          <div class="search-header">
+            <h2>Cari Halaman</h2>
+            <p>Gunakan pencarian untuk menemukan halaman atau konten tertentu</p>
+          </div>
+          <div class="search-container">
+            <div class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="M21 21l-4.35-4.35"/>
+              </svg>
+              <input 
+                type="text" 
+                id="siteSearch" 
+                placeholder="Cari halaman, layanan, atau konten..."
+                class="search-input"
+              />
+            </div>
+            <div class="search-results" id="searchResults"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    padding-top: 0;
+  }
+
+  /* Sitemap Hero */
+  .sitemap-hero {
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
+    color: white;
+    padding: calc(80px + var(--spacing-2xl)) 0 var(--spacing-2xl);
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.9;
+  }
+
+  .hero-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+
+  .hero-breadcrumb a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  .hero-breadcrumb a:hover {
+    opacity: 0.8;
+  }
+
+  /* Sitemap Content */
+  .sitemap-content {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .sitemap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .sitemap-section {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--neutral-200);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--neutral-100);
+  }
+
+  .section-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--primary-blue);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--neutral-800);
+  }
+
+  .sitemap-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .sitemap-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--neutral-50);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid var(--neutral-200);
+  }
+
+  .sitemap-link:hover {
+    background: var(--primary-blue);
+    color: white;
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .sitemap-link.current {
+    background: var(--primary-blue);
+    color: white;
+  }
+
+  .link-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .link-content h3 {
+    font-size: 1.125rem;
+    margin: 0 0 var(--spacing-xs);
+    color: inherit;
+  }
+
+  .link-content p {
+    margin: 0;
+    font-size: 0.875rem;
+    opacity: 0.8;
+    line-height: 1.4;
+  }
+
+  /* Quick Actions */
+  .quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .action-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--neutral-50);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: var(--transition);
+    border: 2px solid transparent;
+  }
+
+  .action-card:hover {
+    border-color: var(--primary-blue);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .action-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-blue);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .action-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .action-card h3 {
+    font-size: 1.125rem;
+    margin: 0 0 var(--spacing-xs);
+    color: var(--neutral-800);
+  }
+
+  .action-card p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+    line-height: 1.4;
+  }
+
+  /* Site Statistics */
+  .site-stats {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--neutral-200);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .stats-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .stats-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-blue);
+  }
+
+  .stats-header p {
+    color: var(--neutral-600);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .stat-card {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--neutral-50);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--neutral-200);
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+    margin-top: var(--spacing-xs);
+  }
+
+  /* Site Search */
+  .site-search {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--neutral-200);
+  }
+
+  .search-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .search-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-blue);
+  }
+
+  .search-header p {
+    color: var(--neutral-600);
+  }
+
+  .search-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .search-box {
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--neutral-400);
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid var(--neutral-200);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  }
+
+  .search-results {
+    display: none;
+    background: var(--neutral-50);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--neutral-200);
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .search-results.active {
+    display: block;
+  }
+
+  .search-result-item {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--neutral-200);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .search-result-item:hover {
+    background: white;
+  }
+
+  .search-result-item:last-child {
+    border-bottom: none;
+  }
+
+  .result-title {
+    font-weight: 500;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .result-description {
+    font-size: 0.875rem;
+    color: var(--neutral-600);
+    margin: 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .sitemap-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-xl);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+
+    .sitemap-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+
+    .sitemap-section {
+      padding: var(--spacing-lg);
+    }
+
+    .section-header {
+      flex-direction: column;
+      text-align: center;
+      gap: var(--spacing-sm);
+    }
+
+    .quick-actions {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .site-stats,
+    .site-search {
+      padding: var(--spacing-lg);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .sitemap-section {
+      padding: var(--spacing-md);
+    }
+
+    .sitemap-link {
+      flex-direction: column;
+      text-align: center;
+      gap: var(--spacing-sm);
+    }
+
+    .quick-actions {
+      grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all fade-in elements
+    const fadeElements = document.querySelectorAll('.fade-in-up');
+    fadeElements.forEach(el => observer.observe(el));
+
+    // Search functionality
+    const searchInput = document.getElementById('siteSearch');
+    const searchResults = document.getElementById('searchResults');
+
+    // Sample search data
+    const searchData = [
+      { title: 'Beranda', url: '/', description: 'Halaman utama LDP Digital dengan overview layanan' },
+      { title: 'Tentang Kami', url: '/about', description: 'Sejarah, visi misi, dan tim LDP Digital' },
+      { title: 'Layanan', url: '/services', description: 'Semua layanan software development yang tersedia' },
+      { title: 'Portfolio', url: '/portfolio', description: 'Showcase proyek-proyek yang telah diselesaikan' },
+      { title: 'Kontak', url: '/contact', description: 'Form konsultasi dan informasi kontak' },
+      { title: 'Sistem ERP', url: '/services#erp', description: 'Enterprise Resource Planning terintegrasi' },
+      { title: 'Software Custom', url: '/services#custom', description: 'Aplikasi khusus sesuai kebutuhan' },
+      { title: 'Konsultasi Digital', url: '/services#consulting', description: 'Analisis proses bisnis dan transformasi digital' },
+      { title: 'Konstruksi', url: '/industries/construction', description: 'Solusi untuk industri konstruksi' },
+      { title: 'Manufaktur', url: '/industries/manufacturing', description: 'Sistem untuk industri manufaktur' },
+      { title: 'Kebijakan Privasi', url: '/privacy', description: 'Perlindungan data dan privasi pengguna' },
+      { title: 'Syarat & Ketentuan', url: '/terms', description: 'Ketentuan penggunaan layanan' }
+    ];
+
+    if (searchInput && searchResults) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        
+        if (query.length < 2) {
+          searchResults.classList.remove('active');
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        const filteredResults = searchData.filter(item => 
+          item.title.toLowerCase().includes(query) || 
+          item.description.toLowerCase().includes(query)
+        );
+
+        if (filteredResults.length > 0) {
+          searchResults.innerHTML = filteredResults.map(item => `
+            <div class="search-result-item" onclick="window.location.href='${item.url}'">
+              <div class="result-title">${item.title}</div>
+              <p class="result-description">${item.description}</p>
+            </div>
+          `).join('');
+          searchResults.classList.add('active');
+        } else {
+          searchResults.innerHTML = `
+            <div class="search-result-item">
+              <div class="result-title">Tidak ada hasil</div>
+              <p class="result-description">Coba gunakan kata kunci yang berbeda</p>
+            </div>
+          `;
+          searchResults.classList.add('active');
+        }
+      });
+
+      // Close search results when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+          searchResults.classList.remove('active');
+        }
+      });
+    }
+
+    // Add smooth scrolling to all internal links
+    document.querySelectorAll('a[href^="/"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Allow normal navigation for internal links
+        // This is just for visual feedback
+        this.style.opacity = '0.7';
+        setTimeout(() => {
+          this.style.opacity = '1';
+        }, 200);
+      });
+    });
+  });
+</script>
