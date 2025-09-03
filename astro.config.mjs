@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://chandrabezzo.github.io/ldpdigital',
-    base: '/ldpdigital', // must match your repo name, with a leading slash
+    site: 'https://ldp-digital-company-rp9t.bolt.host',
+    // Remove base path for Bolt hosting
 });
