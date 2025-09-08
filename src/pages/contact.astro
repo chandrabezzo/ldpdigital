@@ -138,7 +138,7 @@ import Footer from '../components/Footer.astro';
 
               <div class="form-group">
                 <label for="message" data-i18n="contact.form.message">Deskripsi Proyek *</label>
-                <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.form.message.placeholder" placeholder="Jelaskan tantangan bisnis yang ingin diselesaikan, fitur yang dibutuhkan, atau pertanyaan lainnya..." required></textarea>
+                <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.form.message.placeholder" required></textarea>
               </div>
 
               <div class="form-group">
@@ -167,7 +167,7 @@ import Footer from '../components/Footer.astro';
           <!-- Contact Info -->
           <div class="contact-info fade-in-up">
             <div class="info-card">
-              <h3>Informasi Kontak</h3>
+              <h3 data-i18n="contact.info.title">Informasi Kontak</h3>
               <div class="info-items">
                 <div class="info-item">
                   <div class="info-icon">
@@ -176,9 +176,9 @@ import Footer from '../components/Footer.astro';
                     </svg>
                   </div>
                   <div class="info-content">
-                    <h4>Alamat</h4>
-                    <p>Jakarta, Indonesia<br>
-                    <small>Alamat lengkap akan diberikan setelah konfirmasi meeting</small></p>
+                    <h4 data-i18n="contact.info.address.title">Alamat</h4>
+                    <p>Ruko No. 2 Pesona Bali Residence Jl. Cigugur Girang Jl. Waruga Jaya No.108, Ciwaruga, Kec. Parongpong, Kabupaten Bandung Barat, Jawa Barat 40559<br>
+                    <small data-i18n="contact.info.address.description">Alamat lengkap pertemuan akan diberikan setelah konfirmasi meeting</small></p>
                   </div>
                 </div>
 
@@ -189,9 +189,9 @@ import Footer from '../components/Footer.astro';
                     </svg>
                   </div>
                   <div class="info-content">
-                    <h4>Telepon</h4>
-                    <p><a href="tel:+6221XXXXXXX">+62 21 XXXX XXXX</a><br>
-                    <small>Senin - Jumat: 08:00 - 17:00 WIB</small></p>
+                    <h4 data-i18n="contact.info.phone.title">Telepon</h4>
+                    <p><a href="tel:+6281223598599">+62 81 223598599</a><br>
+                    <small data-i18n="contact.info.phone.description">Senin - Jumat: 08:00 - 17:00 WIB</small></p>
                   </div>
                 </div>
 
@@ -202,9 +202,9 @@ import Footer from '../components/Footer.astro';
                     </svg>
                   </div>
                   <div class="info-content">
-                    <h4>Email</h4>
-                    <p><a href="mailto:info@ldpdigital.com">info@ldpdigital.com</a><br>
-                    <small>Respon dalam 24 jam</small></p>
+                    <h4 data-i18n="contact.info.email.title">Email</h4>
+                    <p><a href="mailto:info@ldpdigital.co.id">info@ldpdigital.co.id</a><br>
+                    <small data-i18n="contact.info.email.description">Respon dalam 24 jam</small></p>
                   </div>
                 </div>
 
@@ -215,57 +215,57 @@ import Footer from '../components/Footer.astro';
                     </svg>
                   </div>
                   <div class="info-content">
-                    <h4>WhatsApp</h4>
-                    <p><a href="https://wa.me/6281XXXXXXXX" target="_blank">+62 81 XXXX XXXX</a><br>
-                    <small>Chat langsung untuk respon cepat</small></p>
+                    <h4 data-i18n="contact.info.whatsapp.title">WhatsApp</h4>
+                    <p><a href="https://wa.me/6281223598599" target="_blank">+62 81 223598599</a><br>
+                    <small data-i18n="contact.info.whatsapp.description">Chat langsung untuk respon cepat</small></p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="info-card">
-              <h3>Jam Operasional</h3>
+              <h3 data-i18n="contact.info.schedule.title">Jam Operasional</h3>
               <div class="schedule-items">
                 <div class="schedule-item">
-                  <span class="day">Senin - Jumat</span>
+                  <span class="day" data-i18n="contact.info.schedule.day">Senin - Jumat</span>
                   <span class="time">08:00 - 17:00 WIB</span>
                 </div>
                 <div class="schedule-item">
-                  <span class="day">Sabtu</span>
+                  <span class="day" data-i18n="contact.info.schedule.saturday">Sabtu</span>
                   <span class="time">09:00 - 15:00 WIB</span>
                 </div>
                 <div class="schedule-item">
-                  <span class="day">Minggu</span>
-                  <span class="time">Tutup</span>
+                  <span class="day" data-i18n="contact.info.schedule.sunday">Minggu</span>
+                  <span class="time" data-i18n="contact.info.schedule.closed">Tutup</span>
                 </div>
               </div>
-              <p class="schedule-note">
-                <strong>Emergency Support:</strong> Tersedia 24/7 untuk klien dengan kontrak maintenance
+              <p class="schedule-note" data-i18n="contact.info.schedule.note">
+                <strong>Emergency Support:</strong> Tersedia 24/7 untuk klien dengan kontrak maintenance</strong>
               </p>
             </div>
 
             <div class="info-card">
-              <h3>Proses Konsultasi</h3>
+              <h3 data-i18n="contact.info.process.title">Proses Konsultasi</h3>
               <div class="process-steps">
                 <div class="process-step">
                   <div class="step-number">1</div>
                   <div class="step-text">
-                    <strong>Kirim Form</strong><br>
-                    <small>Isi form konsultasi dengan detail kebutuhan Anda</small>
+                    <strong data-i18n="contact.info.process.step1">Kirim Form</strong><br>
+                    <small data-i18n="contact.info.process.step1.desc">Isi form konsultasi dengan detail kebutuhan Anda</small>
                   </div>
                 </div>
                 <div class="process-step">
                   <div class="step-number">2</div>
                   <div class="step-text">
-                    <strong>Konfirmasi Tim</strong><br>
-                    <small>Tim kami akan menghubungi dalam 24 jam</small>
+                    <strong data-i18n="contact.info.process.step2">Konfirmasi Tim</strong><br>
+                    <small data-i18n="contact.info.process.step2.desc">Tim kami akan menghubungi dalam 24 jam</small>
                   </div>
                 </div>
                 <div class="process-step">
                   <div class="step-number">3</div>
                   <div class="step-text">
-                    <strong>Meeting & Proposal</strong><br>
-                    <small>Diskusi kebutuhan dan presentasi solusi</small>
+                    <strong data-i18n="contact.info.process.step3">Meeting & Proposal</strong><br>
+                    <small data-i18n="contact.info.process.step3.desc">Diskusi kebutuhan dan presentasi solusi</small>
                   </div>
                 </div>
               </div>
@@ -279,68 +279,68 @@ import Footer from '../components/Footer.astro';
     <section class="faq-section">
       <div class="container">
         <div class="section-header fade-in-up">
-          <h2>Pertanyaan yang Sering Diajukan</h2>
-          <p>Jawaban untuk pertanyaan umum tentang layanan kami</p>
+          <h2 data-i18n="contact.faq.title">Pertanyaan yang Sering Diajukan</h2>
+          <p data-i18n="contact.faq.description">Jawaban untuk pertanyaan umum tentang layanan kami</p>
         </div>
 
         <div class="faq-container">
           <div class="faq-item fade-in-up">
             <button class="faq-question">
-              <span>Berapa lama waktu pengembangan software custom?</span>
+              <span data-i18n="contact.faq.question1">Berapa lama waktu pengembangan software custom?</span>
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6,9 12,15 18,9"/>
               </svg>
             </button>
             <div class="faq-answer">
-              <p>Waktu pengembangan bervariasi tergantung kompleksitas proyek. Software sederhana membutuhkan 2-3 bulan, sedangkan sistem ERP kompleks bisa memakan waktu 6-12 bulan. Kami akan memberikan timeline yang jelas setelah analisis kebutuhan.</p>
+              <p data-i18n="contact.faq.answer1">Waktu pengembangan bervariasi tergantung kompleksitas proyek. Software sederhana membutuhkan 2-3 bulan, sedangkan sistem ERP kompleks bisa memakan waktu 6-12 bulan. Kami akan memberikan timeline yang jelas setelah analisis kebutuhan.</p>
             </div>
           </div>
 
           <div class="faq-item fade-in-up">
             <button class="faq-question">
-              <span>Apakah ada garansi untuk software yang dikembangkan?</span>
+              <span data-i18n="contact.faq.question2">Apakah ada garansi untuk software yang dikembangkan?</span>
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6,9 12,15 18,9"/>
               </svg>
             </button>
             <div class="faq-answer">
-              <p>Ya, kami memberikan garansi 1 tahun untuk bug fixing dan maintenance dasar. Setelah periode garansi, tersedia paket maintenance dengan berbagai pilihan sesuai kebutuhan.</p>
+              <p data-i18n="contact.faq.answer2">Ya, kami memberikan garansi 1 tahun untuk bug fixing dan maintenance dasar. Setelah periode garansi, tersedia paket maintenance dengan berbagai pilihan sesuai kebutuhan.</p>
             </div>
           </div>
 
           <div class="faq-item fade-in-up">
             <button class="faq-question">
-              <span>Bagaimana sistem pembayaran untuk proyek software?</span>
+              <span data-i18n="contact.faq.question3">Bagaimana sistem pembayaran untuk proyek software?</span>
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6,9 12,15 18,9"/>
               </svg>
             </button>
             <div class="faq-answer">
-              <p>Sistem pembayaran fleksibel: 30% down payment, 40% saat development milestone, dan 30% saat delivery. Untuk proyek besar, tersedia opsi pembayaran bertahap sesuai progress development.</p>
+              <p data-i18n="contact.faq.answer3">Sistem pembayaran fleksibel: 30% down payment, 40% saat development milestone, dan 30% saat delivery. Untuk proyek besar, tersedia opsi pembayaran bertahap sesuai progress development.</p>
             </div>
           </div>
 
           <div class="faq-item fade-in-up">
             <button class="faq-question">
-              <span>Apakah bisa integrasi dengan sistem existing perusahaan?</span>
+              <span data-i18n="contact.faq.question4">Apakah bisa integrasi dengan sistem existing perusahaan?</span>
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6,9 12,15 18,9"/>
               </svg>
             </button>
             <div class="faq-answer">
-              <p>Tentu saja. Kami memiliki pengalaman dalam integrasi dengan berbagai sistem existing seperti accounting software, CRM, atau database legacy. Tim kami akan melakukan assessment terlebih dahulu.</p>
+              <p data-i18n="contact.faq.answer4">Tentu saja. Kami memiliki pengalaman dalam integrasi dengan berbagai sistem existing seperti accounting software, CRM, atau database legacy. Tim kami akan melakukan assessment terlebih dahulu.</p>
             </div>
           </div>
 
           <div class="faq-item fade-in-up">
             <button class="faq-question">
-              <span>Apakah tersedia training untuk user setelah implementasi?</span>
+              <span data-i18n="contact.faq.question5">Apakah tersedia training untuk user setelah implementasi?</span>
               <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6,9 12,15 18,9"/>
               </svg>
             </button>
             <div class="faq-answer">
-              <p>Ya, training user termasuk dalam paket implementasi. Kami menyediakan training on-site, dokumentasi lengkap, dan video tutorial. Support team juga tersedia untuk membantu adaptasi sistem.</p>
+              <p data-i18n="contact.faq.answer5">Ya, training user termasuk dalam paket implementasi. Kami menyediakan training on-site, dokumentasi lengkap, dan video tutorial. Support team juga tersedia untuk membantu adaptasi sistem.</p>
             </div>
           </div>
         </div>

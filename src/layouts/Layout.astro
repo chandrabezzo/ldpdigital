@@ -35,14 +35,14 @@ const assetPath = (filename) => baseUrl === '/' ? `/${filename}` : `${baseUrl}/$
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="keywords" content="software development, ERP system, construction software, custom software, PT Lentera Duta Persada, LDP Digital, operational software, business automation, sistem ERP Indonesia, software konstruksi, aplikasi bisnis, digital transformation, enterprise software, manajemen proyek konstruksi, sistem inventory, software akuntansi, aplikasi mobile, web development Jakarta" />
+    <meta name="keywords" content="software development, ERP system, construction software, custom software, PT Lentera Duta Persada, LDP Digital, operational software, business automation, sistem ERP Indonesia, software konstruksi, aplikasi bisnis, digital transformation, enterprise software, manajemen proyek konstruksi, sistem inventory, software akuntansi, aplikasi mobile, web development Bandung" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="language" content="Indonesian" />
     <meta name="author" content="LDP Digital" />
-    <meta name="geo.region" content="ID-JK" />
-    <meta name="geo.placename" content="Jakarta" />
-    <meta name="geo.position" content="-6.2088;106.8456" />
-    <meta name="ICBM" content="-6.2088, 106.8456" />
+    <meta name="geo.region" content="ID-BB" />
+    <meta name="geo.placename" content="Bandung" />
+    <meta name="geo.position" content="-6.8461115;107.5797551" />
+    <meta name="ICBM" content="-6.8461115, 107.5797551" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
@@ -70,7 +70,7 @@ const assetPath = (filename) => baseUrl === '/' ? `/${filename}` : `${baseUrl}/$
         "name": "LDP Digital",
         "legalName": "PT. Lentera Duta Persada",
         "alternateName": ["LDP Digital", "Lentera Duta Persada"],
-        "url": "https://ldpdigital.com",
+        "url": "https://ldpdigital.co.id",
         "logo": {"@type": "ImageObject", "url": "https://chandrabezzo.github.io/ldpdigital/logo.png", "width": "400", "height": "400"},
         "description": "Leading software development company specializing in ERP systems, custom software solutions, and digital transformation for construction, manufacturing, and retail industries in Indonesia.",
         "foundingDate": "2020",
@@ -155,9 +155,9 @@ const assetPath = (filename) => baseUrl === '/' ? `/${filename}` : `${baseUrl}/$
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+62-21-XXXXXXX",
+          "telephone": "+62-81-223598599",
           "contactType": "customer service",
-          "email": "info@ldpdigital.com",
+          "email": "info@ldpdigital.co.id",
           "availableLanguage": ["Indonesian", "English"]
         },
         "sameAs": [
@@ -208,16 +208,20 @@ const assetPath = (filename) => baseUrl === '/' ? `/${filename}` : `${baseUrl}/$
         "name": "LDP Digital",
         "alternateName": "PT. Lentera Duta Persada",
         "description": "Professional software development company specializing in ERP systems and custom business solutions for construction and various industries.",
-        "url": "https://ldpdigital.com",
-        "telephone": "+62-21-XXXXXXX",
-        "email": "info@ldpdigital.com",
+        "url": "https://ldpdigital.co.id",
+        "telephone": "+62-81-223598599",
+        "email": "info@ldpdigital.co.id",
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "ID",
-          "addressRegion": "Jakarta"
+          "addressRegion": "West Java",
+          "addressLocality": "Bandung",
+          "addressStreetAddress": "Jl. Cigugur Girang Jl. Waruga Jaya No.108, Ciwaruga, Kec. Parongpong, Kabupaten Bandung Barat, Jawa Barat 40559",
+          "addressPostalCode": "40559"
         },
         "openingHours": "Mo-Fr 08:00-17:00",
-        "priceRange": "$$"
+        "priceRange": "$$",
+        "logo": "https://chandrabezzo.github.io/ldpdigital/logo.png"
       }
     </script>
   </body>
@@ -343,6 +347,7 @@ const assetPath = (filename) => baseUrl === '/' ? `/${filename}` : `${baseUrl}/$
     background: transparent;
     color: var(--primary-blue);
     border-color: var(--primary-blue);
+    color: white;
   }
 
   .btn-secondary:hover {

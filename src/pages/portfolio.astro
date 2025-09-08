@@ -38,12 +38,12 @@ import Footer from '../components/Footer.astro';
       <div class="container">
         <div class="stats-grid fade-in-up">
           <div class="stat-card">
-            <div class="stat-number">50+</div>
+            <div class="stat-number">20+</div>
             <div class="stat-label" data-i18n="portfolio.stats.projects">Proyek Selesai</div>
             <div class="stat-description" data-i18n="portfolio.stats.projects.desc">Berbagai skala dan kompleksitas</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">30+</div>
+            <div class="stat-number">5+</div>
             <div class="stat-label" data-i18n="portfolio.stats.clients">Klien Aktif</div>
             <div class="stat-description" data-i18n="portfolio.stats.clients.desc">Dari startup hingga enterprise</div>
           </div>
@@ -554,89 +554,199 @@ import Footer from '../components/Footer.astro';
 
         <div class="tech-categories">
           <div class="tech-category fade-in-up">
-            <h3 data-i18n="portfolio.tech.frontend">Frontend</h3>
+            <div class="tech-category-header">
+              <div class="category-icon frontend-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                  <path d="M2 17L12 22L22 17"/>
+                  <path d="M2 12L12 17L22 12"/>
+                </svg>
+              </div>
+              <h3 data-i18n="portfolio.tech.frontend">Frontend</h3>
+            </div>
             <div class="tech-items">
-              <div class="tech-item">
-                <div class="tech-icon">⚛️</div>
-                <span>React</span>
+              <div class="tech-item" data-tech="flutter">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" loading="lazy">
+                </div>
+                <span class="tech-name">Flutter</span>
+                <div class="tech-description">UI Library</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">🟢</div>
-                <span>Vue.js</span>
+              <div class="tech-item" data-tech="astro">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg" alt="Astro" loading="lazy">
+                </div>
+                <span class="tech-name">Astro</span>
+                <div class="tech-description">UI Library</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">🅰️</div>
-                <span>Angular</span>
+              <div class="tech-item" data-tech="react">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy">
+                </div>
+                <span class="tech-name">React</span>
+                <div class="tech-description">UI Library</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">⚡</div>
-                <span>Next.js</span>
+              <div class="tech-item" data-tech="vue">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" loading="lazy">
+                </div>
+                <span class="tech-name">Vue.js</span>
+                <div class="tech-description">Progressive Framework</div>
+              </div>
+              <div class="tech-item" data-tech="angular">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" loading="lazy">
+                </div>
+                <span class="tech-name">Angular</span>
+                <div class="tech-description">Full Framework</div>
+              </div>
+              <div class="tech-item" data-tech="nextjs">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" loading="lazy">
+                </div>
+                <span class="tech-name">Next.js</span>
+                <div class="tech-description">React Framework</div>
               </div>
             </div>
           </div>
 
           <div class="tech-category fade-in-up">
-            <h3 data-i18n="portfolio.tech.backend">Backend</h3>
+            <div class="tech-category-header">
+              <div class="category-icon backend-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3 data-i18n="portfolio.tech.backend">Backend</h3>
+            </div>
             <div class="tech-items">
-              <div class="tech-item">
-                <div class="tech-icon">🟢</div>
-                <span>Node.js</span>
+              <div class="tech-item" data-tech="dart">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" loading="lazy">
+                </div>
+                <span class="tech-name">Dart</span>
+                <div class="tech-description">Enterprise Language</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">🐍</div>
-                <span>Python</span>
+               <div class="tech-item" data-tech="kotlin">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" loading="lazy">
+                </div>
+                <span class="tech-name">Kotlin</span>
+                <div class="tech-description">Enterprise Platform</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">☕</div>
-                <span>Java</span>
+               <div class="tech-item" data-tech="java">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy">
+                </div>
+                <span class="tech-name">Java</span>
+                <div class="tech-description">Enterprise Platform</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">🔷</div>
-                <span>.NET</span>
+              <div class="tech-item" data-tech="nodejs">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy">
+                </div>
+                <span class="tech-name">Node.js</span>
+                <div class="tech-description">JavaScript Runtime</div>
+              </div>
+              <div class="tech-item" data-tech="python">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy">
+                </div>
+                <span class="tech-name">Python</span>
+                <div class="tech-description">Enterprise Platform</div>
+              </div>
+              <div class="tech-item" data-tech="dotnet">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET" loading="lazy">
+                </div>
+                <span class="tech-name">.NET</span>
+                <div class="tech-description">Microsoft Framework</div>
               </div>
             </div>
           </div>
 
           <div class="tech-category fade-in-up">
-            <h3 data-i18n="portfolio.tech.database">Database</h3>
+            <div class="tech-category-header">
+              <div class="category-icon database-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12C21 13.66 16.97 15 12 15S3 13.66 3 12"/>
+                  <path d="M3 5V19C3 20.66 7.03 22 12 22S21 20.66 21 19V5"/>
+                </svg>
+              </div>
+              <h3 data-i18n="portfolio.tech.database">Database</h3>
+            </div>
             <div class="tech-items">
-              <div class="tech-item">
-                <div class="tech-icon">🐘</div>
-                <span>PostgreSQL</span>
+              <div class="tech-item" data-tech="postgresql">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy">
+                </div>
+                <span class="tech-name">PostgreSQL</span>
+                <div class="tech-description">Relational Database</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">🍃</div>
-                <span>MongoDB</span>
+              <div class="tech-item" data-tech="mongodb">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy">
+                </div>
+                <span class="tech-name">MongoDB</span>
+                <div class="tech-description">Document Database</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">🔶</div>
-                <span>MySQL</span>
+              <div class="tech-item" data-tech="mysql">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy">
+                </div>
+                <span class="tech-name">MySQL</span>
+                <div class="tech-description">Relational Database</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">⚡</div>
-                <span>Redis</span>
+              <div class="tech-item" data-tech="redis">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" loading="lazy">
+                </div>
+                <span class="tech-name">Redis</span>
+                <div class="tech-description">In-Memory Cache</div>
               </div>
             </div>
           </div>
 
           <div class="tech-category fade-in-up">
-            <h3 data-i18n="portfolio.tech.cloud">Cloud & DevOps</h3>
+            <div class="tech-category-header">
+              <div class="category-icon cloud-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 12H22L18 8L14 12H17V16H19V12ZM8 16H5L9 20L13 16H10V12H8V16ZM12 8V5L8 9L12 13V10H16V8H12ZM12 19V22L16 18L12 14V17H8V19H12Z"/>
+                </svg>
+              </div>
+              <h3 data-i18n="portfolio.tech.cloud">Cloud & DevOps</h3>
+            </div>
             <div class="tech-items">
-              <div class="tech-item">
-                <div class="tech-icon">☁️</div>
-                <span>AWS</span>
+              <div class="tech-item" data-tech="aws">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" loading="lazy">
+                </div>
+                <span class="tech-name">AWS</span>
+                <div class="tech-description">Cloud Platform</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">🔵</div>
-                <span>Azure</span>
+              <div class="tech-item" data-tech="azure">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" loading="lazy">
+                </div>
+                <span class="tech-name">Azure</span>
+                <div class="tech-description">Microsoft Cloud</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">🐳</div>
-                <span>Docker</span>
+              <div class="tech-item" data-tech="docker">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
+                </div>
+                <span class="tech-name">Docker</span>
+                <div class="tech-description">Containeri</br>zation</div>
               </div>
-              <div class="tech-item">
-                <div class="tech-icon">⚙️</div>
-                <span>Kubernetes</span>
+              <div class="tech-item" data-tech="kubernetes">
+                <div class="tech-icon-wrapper">
+                  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" loading="lazy">
+                </div>
+                <span class="tech-name">Kubernetes</span>
+                <div class="tech-description">Orches</br>tration</div>
               </div>
             </div>
           </div>
@@ -1225,54 +1335,273 @@ import Footer from '../components/Footer.astro';
   /* Technologies */
   .technologies {
     padding: var(--spacing-2xl) 0;
-    background: var(--neutral-50);
+    background: linear-gradient(135deg, var(--neutral-50) 0%, var(--neutral-100) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .technologies::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e5e7eb" stroke-width="0.5" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>') repeat;
+    opacity: 0.5;
+    z-index: 0;
   }
 
   .tech-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-2xl);
+    position: relative;
+    z-index: 1;
   }
 
   .tech-category {
     background: white;
-    padding: var(--spacing-xl);
-    border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-md);
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--neutral-200);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tech-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-orange));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  .tech-category:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-2xl);
+    border-color: var(--primary-blue);
+  }
+
+  .tech-category:hover::before {
+    transform: scaleX(1);
+  }
+
+  .tech-category-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--neutral-100);
+  }
+
+  .category-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .category-icon svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .frontend-icon {
+    background: linear-gradient(135deg, #61dafb, #21d4fd);
+    color: white;
+  }
+
+  .backend-icon {
+    background: linear-gradient(135deg, #68d391, #38b2ac);
+    color: white;
+  }
+
+  .database-icon {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+  }
+
+  .cloud-icon {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+  }
+
+  .tech-category:hover .category-icon {
+    transform: scale(1.1) rotate(5deg);
   }
 
   .tech-category h3 {
-    font-size: 1.375rem;
-    margin-bottom: var(--spacing-md);
-    color: var(--primary-blue);
-    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--neutral-800);
+    font-weight: 700;
+    letter-spacing: -0.025em;
   }
 
   .tech-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs);
   }
 
   .tech-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: var(--spacing-xs);
-    padding: var(--spacing-sm);
+    text-align: center;
+    padding: var(--spacing-lg);
     background: var(--neutral-50);
-    border-radius: var(--border-radius);
-    transition: var(--transition);
+    border-radius: var(--border-radius-lg);
+    border: 2px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tech-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s ease;
   }
 
   .tech-item:hover {
-    background: var(--primary-blue);
-    color: white;
+    background: white;
+    border-color: var(--primary-blue);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .tech-item:hover::before {
+    left: 100%;
+  }
+
+  .tech-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+    transition: all 0.3s ease;
+    position: relative;
   }
 
   .tech-icon {
-    font-size: 1.25rem;
-    width: 24px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+
+  /* Tech icon wrapper styles for official logos */
+  .tech-icon-wrapper {
+    background: white;
+    border: 2px solid var(--neutral-200);
+  }
+
+  .tech-item:hover .tech-icon-wrapper {
+    background: white;
+    border-color: var(--primary-blue);
+  }
+
+  /* Special handling for logos that need background adjustments */
+  .tech-item[data-tech="nextjs"] .tech-icon-wrapper {
+    background: white;
+  }
+
+  .tech-item[data-tech="nextjs"] .tech-icon {
+    filter: invert(1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+
+  .tech-item[data-tech="kubernetes"] .tech-icon {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+  }
+
+  /* Loading state for images */
+  .tech-icon[loading="lazy"] {
+    opacity: 0;
+    animation: fadeInIcon 0.3s ease forwards;
+  }
+
+  @keyframes fadeInIcon {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Error fallback styling */
+  .tech-icon:not([src]),
+  .tech-icon[src=""] {
+    display: none;
+  }
+
+  .tech-icon:not([src])::after,
+  .tech-icon[src=""]::after {
+    content: '🔧';
+    display: block;
+    font-size: 24px;
     text-align: center;
+    line-height: 32px;
+  }
+
+  .tech-item:hover .tech-icon-wrapper {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .tech-item:hover .tech-icon {
+    transform: scale(1.1);
+  }
+
+  .tech-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--neutral-800);
+    margin-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+
+  .tech-item:hover .tech-name {
+    color: var(--primary-blue);
+  }
+
+  .tech-description {
+    font-size: 0.75rem;
+    color: var(--neutral-600);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+
+  .tech-item:hover .tech-description {
+    color: var(--neutral-700);
   }
 
   /* CTA Section */
@@ -1484,11 +1813,40 @@ import Footer from '../components/Footer.astro';
 
     .tech-categories {
       grid-template-columns: 1fr;
-      gap: var(--spacing-lg);
+      gap: var(--spacing-xl);
+    }
+
+    .tech-category {
+      padding: var(--spacing-xl);
+    }
+
+    .tech-category-header {
+      flex-direction: column;
+      text-align: center;
+      gap: var(--spacing-sm);
     }
 
     .tech-items {
       grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+
+    .tech-item {
+      padding: var(--spacing-md);
+    }
+
+    .tech-icon-wrapper {
+      width: 48px;
+      height: 48px;
+    }
+
+    .tech-icon {
+      width: 28px;
+      height: 28px;
+    }
+
+    .tech-icon-wrapper {
+      border-width: 1px;
     }
 
     .cta-content h2 {
@@ -1624,6 +1982,10 @@ import Footer from '../components/Footer.astro';
       font-size: 0.9rem;
     }
 
+    .tech-categories {
+      gap: var(--spacing-lg);
+    }
+
     .tech-category {
       padding: var(--spacing-lg);
     }
@@ -1633,13 +1995,29 @@ import Footer from '../components/Footer.astro';
     }
 
     .tech-item {
-      padding: var(--spacing-xs);
-      font-size: 0.875rem;
+      padding: var(--spacing-sm);
+    }
+
+    .tech-icon-wrapper {
+      width: 40px;
+      height: 40px;
     }
 
     .tech-icon {
-      font-size: 1rem;
-      width: 20px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .tech-icon-wrapper {
+      border-width: 1px;
+    }
+
+    .tech-name {
+      font-size: 0.875rem;
+    }
+
+    .tech-description {
+      font-size: 0.7rem;
     }
   }
 </style>

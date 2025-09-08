@@ -1,6 +1,6 @@
 export async function GET({ site }) {
-  const siteUrl = site || 'https://ldpdigital.com';
-  
+  const siteUrl = site || 'https://ldpdigital.co.id';
+
   const robotsTxt = `User-agent: *
 Allow: /
 

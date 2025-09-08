@@ -1,6 +1,6 @@
 export async function GET({ site }) {
-  const siteUrl = site || 'https://ldpdigital.com';
-  
+  const siteUrl = site || 'https://ldpdigital.co.id';
+
   const pages = [
     {
       url: '',
@@ -10,14 +10,14 @@ export async function GET({ site }) {
     },
     {
       url: 'about',
-      changefreq: 'monthly', 
+      changefreq: 'monthly',
       priority: '0.8',
       lastmod: '2025-01-08'
     },
     {
       url: 'contact',
       changefreq: 'monthly',
-      priority: '0.9', 
+      priority: '0.9',
       lastmod: '2025-01-08'
     },
     {

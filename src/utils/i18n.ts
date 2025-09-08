@@ -39,6 +39,10 @@ export const translations: Translations = {
   'services.subtitle': { en: 'Leading technology solutions to optimize your business operations', id: 'Solusi teknologi terdepan untuk mengoptimalkan operasional bisnis Anda' },
   'services.erp.title': { en: 'Integrated ERP System', id: 'Sistem ERP Terintegrasi' },
   'services.erp.description': { en: 'Enterprise Resource Planning that connects all aspects of your business in one unified platform.', id: 'Enterprise Resource Planning yang menghubungkan semua aspek bisnis Anda dalam satu platform terpadu.' },
+  'services.erp.features.title': { en: 'Main Features:', id: 'Fitur Utama:' },
+  'services.erp.benefits.title': { en: 'Benefits:', id: 'Keuntungan:' },
+  'services.erp.features.project': { en: 'Project Management & Tracking', id: 'Pengelolaan Proyek & Pengawasan' },
+  'services.erp.features.reporting': { en: 'Real-time Reporting & Analytics', id: 'Laporan & Analisis Real-time' },
   'services.custom.title': { en: 'Custom Software', id: 'Software Custom' },
   'services.custom.description': { en: 'Custom application development tailored to your unique operational needs.', id: 'Pengembangan aplikasi khusus sesuai kebutuhan unik operasional perusahaan Anda.' },
   'services.consulting.title': { en: 'Digital Consulting', id: 'Konsultasi Digital' },
@@ -127,24 +131,27 @@ export const translations: Translations = {
   'hero.card.secure': { en: 'Secure & Reliable', id: 'Aman & Terpercaya' },
   'hero.card.secure_subtitle': { en: 'Enterprise Grade', id: 'Tingkat Enterprise' },
 
+  'services.hero.title': { en: 'Our Featured Services', id: 'Layanan Unggulan Kami' },
+  'services.hero.subtitle': { en: 'Leading technology solutions to optimize your business operations', id: 'Solusi teknologi terdepan untuk mengoptimalkan operasional bisnis Anda' },
+
   // Services detailed features
   'services.erp.features.finance': { en: 'Financial Management', id: 'Manajemen Keuangan' },
   'services.erp.features.inventory': { en: 'Inventory & Supply Chain', id: 'Inventory & Supply Chain' },
   'services.erp.features.hr': { en: 'Human Resources', id: 'Human Resources' },
   'services.erp.features.crm': { en: 'Customer Relations', id: 'Customer Relations' },
-  
+
   'services.custom.features.analysis': { en: 'In-depth Needs Analysis', id: 'Analisis Kebutuhan Mendalam' },
   'services.custom.features.ui': { en: 'Modern User Interface', id: 'User Interface Modern' },
   'services.custom.features.integration': { en: 'Existing System Integration', id: 'Integrasi System Existing' },
   'services.custom.features.support': { en: 'Training & Support', id: 'Training & Support' },
-  
+
 
   // Industries detailed features
   'industries.construction.features.project': { en: 'Project Management System', id: 'Project Management System' },
   'industries.construction.features.material': { en: 'Material & Equipment Tracking', id: 'Material & Equipment Tracking' },
   'industries.construction.features.financial': { en: 'Financial Control & Budgeting', id: 'Financial Control & Budgeting' },
   'industries.construction.features.quality': { en: 'Quality Assurance System', id: 'Quality Assurance System' },
-  
+
   'industries.manufacturing.description': { en: 'Integrated production and quality control systems', id: 'Sistem produksi dan quality control terintegrasi' },
   'industries.retail.description': { en: 'Point of sale and real-time inventory management', id: 'Point of sale dan manajemen inventory real-time' },
   'industries.healthcare.description': { en: 'Hospital and clinic management systems', id: 'Sistem manajemen rumah sakit dan klinik' },
@@ -164,22 +171,48 @@ export const translations: Translations = {
   'footer.services.website': { en: 'Website Development', id: 'Pengembangan Website' },
   'footer.services.mobile': { en: 'Mobile Applications', id: 'Aplikasi Mobile' },
   'footer.services.maintenance': { en: 'Maintenance & Support', id: 'Maintenance & Support' },
-  
+
   'footer.industries.title': { en: 'Industries', id: 'Industri' },
   'footer.industries.construction': { en: 'Construction', id: 'Konstruksi' },
   'footer.industries.manufacturing': { en: 'Manufacturing', id: 'Manufaktur' },
   'footer.industries.retail': { en: 'Retail', id: 'Retail' },
   'footer.industries.healthcare': { en: 'Healthcare', id: 'Healthcare' },
   'footer.industries.education': { en: 'Education', id: 'Pendidikan' },
-  
+
+  'contact.hero.title': { en: 'Contact Us', id: 'Hubungi Kami' },
+  'contact.hero.subtitle': { en: 'Contact Us for software solutions', id: 'Konsultasikan kebutuhan software perusahaan Anda dengan tim expert kami' },
+
+  'contact.info.title': { en: 'Contact Info', id: 'Kontak Info' },
+  'contact.info.address.title': { en: 'Address', id: 'Alamat' },
+  'contact.info.address.description': { en: 'The complete address will be provided after the meeting confirmation.', id: 'Alamat lengkap akan diberikan setelah konfirmasi meeting' },
+  'contact.info.phone.title': { en: 'Phone', id: 'Telepon' },
+  'contact.info.phone.description': { en: 'Monday - Friday: 08:00 - 17:00 WIB', id: 'Senin - Jumat: 08:00 - 17:00 WIB' },
+  'contact.info.email.title': { en: 'Email', id: 'Email' },
+  'contact.info.email.description': { en: 'Response within 24 hours', id: 'Respon dalam 24 jam' },
+  'contact.info.whatsapp.title': { en: 'WhatsApp', id: 'WhatsApp' },
+  'contact.info.whatsapp.description': { en: 'Live chat for quick response', id: 'Chat langsung untuk respon cepat' },
+
+  'contact.info.schedule.title': { en: 'Operational Schedule', id: 'Jadwal Operasional' },
+  'contact.info.schedule.day': { en: 'Monday - Friday', id: 'Senin - Jumat' },
+  'contact.info.schedule.saturday': { en: 'Saturday', id: 'Sabtu' },
+  'contact.info.schedule.sunday': { en: 'Sunday', id: 'Minggu' },
+  'contact.info.schedule.closed': { en: 'Closed', id: 'Tutup' },
+  'contact.info.schedule.note': { en: 'Emergency Support: Available 24/7 for clients with maintenance contracts', id: 'Dukungan Darurat: Tersedia 24/7 untuk klien dengan kontrak pemeliharaan' },
+
   'footer.contact.title': { en: 'Contact Info', id: 'Kontak Info' },
-  'footer.contact.location': { en: 'Jakarta, Indonesia', id: 'Jakarta, Indonesia' },
-  'footer.contact.phone': { en: '+62 21 XXXX XXXX', id: '+62 21 XXXX XXXX' },
-  'footer.contact.email': { en: 'info@ldpdigital.com', id: 'info@ldpdigital.com' },
+  'footer.contact.location': {
+    en: 'Ruko No. 2 Pesona Bali Residence Jl. Cigugur Girang Jl. Waruga Jaya No.108, Ciwaruga, Kec. Parongpong, Kabupaten Bandung Barat, Jawa Barat 40559',
+    id: 'Ruko No. 2 Pesona Bali Residence Jl. Cigugur Girang Jl. Waruga Jaya No.108, Ciwaruga, Kec. Parongpong, Kabupaten Bandung Barat, Jawa Barat 40559'
+  },
+  'footer.contact.phone': { en: '+62 81 223598599', id: '+62 81 223598599' },
+  'footer.contact.email': { en: 'info@ldpdigital.co.id', id: 'info@ldpdigital.co.id' },
 
   // Additional About Page translations
-  'about.story.lead': { en: 'LDP Digital (PT. Lentera Duta Persada) was founded with the vision of becoming a leading technology partner in digital transformation of Indonesian companies, especially in the construction and engineering sectors.', id: 'LDP Digital (PT. Lentera Duta Persada) didirikan dengan visi menjadi partner teknologi terdepan dalam transformasi digital perusahaan Indonesia, khususnya di sektor konstruksi dan engineering.' },
-  'about.story.description': { en: 'Starting from the real needs of the construction industry for integrated management systems, we develop software solutions that not only meet technical needs, but also understand the operational complexity in the field.', id: 'Berawal dari kebutuhan nyata industri konstruksi akan sistem manajemen yang terintegrasi, kami mengembangkan solusi software yang tidak hanya memenuhi kebutuhan teknis, tetapi juga memahami kompleksitas operasional di lapangan.' },
+  'about.story.lead': { en: 'LDP Digital (PT. Lentera Duta Persada) was established with the vision of becoming a leading technology partner in the digital transformation of Indonesian companies, particularly in the construction, engineering, and various other industries.', id: 'LDP Digital (PT. Lentera Duta Persada) didirikan dengan visi menjadi partner teknologi terdepan dalam transformasi digital perusahaan Indonesia, khususnya di sektor konstruksi, engineering, serta berbagai industri lainnya.' },
+  'about.story.description': {
+    en: 'Starting from the real needs of the construction industry for an integrated management system, we developed software solutions that not only meet technical requirements but also understand the operational complexities in the field. With over 5 years of experience, we have assisted dozens of companies from various sectors—including construction, manufacturing, trade, and services—in improving operational efficiency by up to 40% through the implementation of ERP systems, custom software, and other digital services.',
+    id: 'Berawal dari kebutuhan nyata industri konstruksi akan sistem manajemen yang terintegrasi, kami mengembangkan solusi software yang tidak hanya memenuhi kebutuhan teknis, tetapi juga memahami kompleksitas operasional di lapangan. Dengan pengalaman lebih dari 5 tahun, kami telah membantu puluhan perusahaan dari berbagai sektor—termasuk konstruksi, manufaktur, perdagangan, dan jasa—meningkatkan efisiensi operasional hingga 40% melalui implementasi sistem ERP, software custom, dan layanan digital lainnya.'
+  },
 
   // Services Page
   'services.overview.title': { en: 'Leading Technology Solutions', id: 'Solusi Teknologi Terdepan' },
@@ -209,7 +242,10 @@ export const translations: Translations = {
   'breadcrumb.privacy': { en: 'Privacy Policy', id: 'Kebijakan Privasi' },
 
   // About Page - Additional content
-  'about.story.experience': { en: 'With over 5 years of experience, we have helped dozens of construction companies increase operational efficiency by up to 40% through implementation of ERP systems and custom software designed specifically for their industry.', id: 'Dengan pengalaman lebih dari 5 tahun, kami telah membantu puluhan perusahaan konstruksi meningkatkan efisiensi operasional hingga 40% melalui implementasi sistem ERP dan software custom yang dirancang khusus untuk industri mereka.' },
+  'about.story.experience': {
+    en: 'With over 5 years of experience, we have helped dozens of construction companies improve their operational efficiency by up to 40% through the implementation of ERP systems and custom software specifically designed for their industry.',
+    id: 'Dengan pengalaman lebih dari 5 tahun, kami telah membantu puluhan perusahaan konstruksi meningkatkan efisiensi operasional hingga 40% melalui implementasi sistem ERP dan software custom yang dirancang khusus untuk industri mereka.'
+  },
   'about.achievement.projects': { en: 'Successful Projects', id: 'Proyek Sukses' },
   'about.achievement.clients': { en: 'Active Clients', id: 'Klien Aktif' },
   'about.vision.description': { en: 'To become a leading technology company that delivers sustainable digital transformation for the construction and engineering industry in Indonesia.', id: 'Menjadi perusahaan teknologi terdepan yang mengantarkan transformasi digital berkelanjutan untuk industri konstruksi dan engineering di Indonesia.' },
@@ -335,6 +371,29 @@ export const translations: Translations = {
   'contact.form.privacy.terms': { en: 'Terms & Conditions', id: 'Syarat & Ketentuan' },
   'contact.form.loading': { en: 'Sending...', id: 'Mengirim...' },
 
+  'contact.info.process.title': { en: 'Consultation Process', id: 'Proses Konsultasi' },
+  'contact.info.process.step1': { en: 'Send Form', id: 'Kirim Form' },
+  'contact.info.process.step1.desc': { en: 'Fill the consultation form with your business needs', id: 'Fill the consultation form with your business needs' },
+  'contact.info.process.step2': { en: 'Confirm Team', id: 'Konfirmasi Tim' },
+  'contact.info.process.step2.desc': { en: 'Our team will contact you within 24 hours', id: 'Tim kami akan menghubungi dalam 24 jam' },
+  'contact.info.process.step3': { en: 'Meeting & Proposal', id: 'Meeting & Proposal' },
+  'contact.info.process.step3.desc': { en: 'Discuss your needs and present solutions', id: 'Diskusi kebutuhan dan presentasi solusi' },
+
+  'contact.faq.title': { en: 'Frequently Asked Questions', id: 'Pertanyaan yang Sering Diajukan' },
+  'contact.faq.description': { en: 'Answers to frequently asked questions about our services', id: 'Jawaban untuk pertanyaan umum tentang layanan kami' },
+  'contact.faq.question1': { en: 'How long does it take to develop a software?', id: 'Berapa lama waktu pengembangan software?' },
+  'contact.faq.answer1': { en: 'The development time depends on the complexity of the project and the scope of work.', id: 'Waktu pengembangan tergantung pada kompleksitas proyek dan skop kerja.' },
+  'contact.faq.question2': { en: 'Is there a warranty for the developed software?', id: 'Apakah ada garansi untuk software yang dikembangkan?' },
+  'contact.faq.answer2': { en: 'Yes, we offer a warranty of 3 months for bug fixing and basic maintenance. After the warranty period, we offer maintenance packages at various options based on your needs.', id: 'Ya, kami menawarkan garansi 3 bulan untuk bug fixing dan maintenance dasar. Setelah periode garansi, tersedia paket maintenance dengan berbagai pilihan sesuai kebutuhan.' },
+  'contact.faq.question3': { en: 'What payment methods are available?', id: 'Metode pembayaran apa yang tersedia?' },
+  'contact.faq.answer3': { en: 'We accept bank transfer, credit card, and cash on delivery.', id: 'Kami menerima transfer bank, kartu kredit, dan pembayaran COD.' },
+  'contact.faq.question4': { en: 'Can it integrate with the company\'s existing system?', id: 'Bisa tidak integrasi dengan sistem existing perusahaan?' },
+  'contact.faq.answer4': { en: 'Yes, we offer a warranty of 1 year for bug fixing and basic maintenance. After the warranty period, we offer maintenance packages at various options based on your needs.', id: 'Ya, kami memiliki pengalaman dalam integrasi dengan berbagai sistem existing seperti accounting software, CRM, atau database legacy. Tim kami akan melakukan assessment terlebih dahulu.' },
+  'contact.faq.question5': { en: 'Is training available for users after implementation?', id: 'Apakah tersedia training untuk user setelah implementasi?' },
+  'contact.faq.answer5': {
+    en: 'Yes, user training is included in the implementation package. We provide on-site training, complete documentation, and video tutorials. The support team is also available to assist with system adaptation.',
+    id: 'Ya, training user termasuk dalam paket implementasi. Kami menyediakan training on-site, dokumentasi lengkap, dan video tutorial. Support team juga tersedia untuk membantu adaptasi sistem.'
+  },
 
   'services.why.title': { en: 'Why Choose LDP Digital?', id: 'Mengapa Memilih LDP Digital?' },
   'services.why.experience.title': { en: 'Proven Experience', id: 'Pengalaman Terbukti' },
@@ -449,19 +508,19 @@ export const translations: Translations = {
   'portfolio.casestudy.duration': { en: '6 Months Implementation', id: '6 Bulan Implementasi' },
   'portfolio.casestudy.title': { en: 'Digital Transformation of Large Construction Company', id: 'Transformasi Digital Perusahaan Konstruksi Besar' },
   'portfolio.casestudy.description': { en: 'Comprehensive ERP system implementation for construction company with 200+ employees, managing 15+ simultaneous projects with total budget of Rp 500+ billion.', id: 'Implementasi sistem ERP komprehensif untuk perusahaan konstruksi dengan 200+ karyawan, mengelola 15+ proyek simultan dengan budget total Rp 500+ miliar.' },
-  
+
   'portfolio.casestudy.challenges.title': { en: 'Challenges', id: 'Tantangan' },
   'portfolio.casestudy.challenges.manual': { en: 'Manual project management with Excel', id: 'Manajemen proyek manual dengan Excel' },
   'portfolio.casestudy.challenges.tracking': { en: 'Difficulty tracking materials and equipment', id: 'Kesulitan tracking material dan equipment' },
   'portfolio.casestudy.challenges.reporting': { en: 'Non real-time financial reporting', id: 'Laporan keuangan tidak real-time' },
   'portfolio.casestudy.challenges.communication': { en: 'Non-integrated team communication', id: 'Komunikasi tim tidak terintegrasi' },
-  
+
   'portfolio.casestudy.solutions.title': { en: 'Solutions', id: 'Solusi' },
   'portfolio.casestudy.solutions.erp': { en: 'Integrated ERP system with complete modules', id: 'Sistem ERP terintegrasi dengan modul lengkap' },
   'portfolio.casestudy.solutions.mobile': { en: 'Mobile app for field reporting', id: 'Mobile app untuk field reporting' },
   'portfolio.casestudy.solutions.dashboard': { en: 'Real-time dashboard for management', id: 'Dashboard real-time untuk management' },
   'portfolio.casestudy.solutions.workflow': { en: 'Automated workflow and approval system', id: 'Automated workflow dan approval system' },
-  
+
   'portfolio.casestudy.results.title': { en: 'Results', id: 'Hasil' },
   'portfolio.casestudy.results.efficiency': { en: 'Operational efficiency improvement', id: 'Peningkatan efisiensi operasional' },
   'portfolio.casestudy.results.reporting_time': { en: 'Report generation time reduction', id: 'Pengurangan waktu pembuatan laporan' },
@@ -502,6 +561,13 @@ export const translations: Translations = {
   'services.custom.services.maintenance': { en: 'Maintenance & Support', id: 'Maintenance & Support' },
   'services.custom.tech.title': { en: 'Technologies We Use:', id: 'Teknologi yang Kami Gunakan:' },
 
+  'services.consulting.features.analysis': { en: 'Business Process Analysis', id: 'Business Process Analysis' },
+  'services.consulting.features.assessment': { en: 'Technology Assessment', id: 'Technology Assessment' },
+  'services.consulting.features.roadmap': { en: 'Digital Transformation Roadmap', id: 'Digital Transformation Roadmap' },
+  'services.consulting.features.transformation': { en: 'Digital Transformation', id: 'Digital Transformation' },
+  'services.consulting.features.strategy': { en: 'Implementation Strategy', id: 'Implementation Strategy' },
+  'services.consulting.features.change': { en: 'Change Management', id: 'Change Management' },
+  'services.consulting.features.roi': { en: 'ROI Measurement', id: 'ROI Measurement' },
   'services.consulting.detailed.title': { en: 'Digital Consulting', id: 'Konsultasi Digital' },
   'services.consulting.detailed.description': { en: 'In-depth analysis of business processes to find optimal technology solutions. Targeted digital transformation strategy.', id: 'Analisis mendalam terhadap proses bisnis untuk menemukan solusi teknologi yang optimal. Strategi transformasi digital yang tepat sasaran.' },
   'services.consulting.process.title': { en: 'Consultation Process:', id: 'Proses Konsultasi:' },
@@ -530,7 +596,7 @@ export const translations: Translations = {
   'services.mobile.platforms.react': { en: 'React Native', id: 'React Native' },
   'services.mobile.platforms.flutter': { en: 'Flutter', id: 'Flutter' },
   'services.mobile.platforms.pwa': { en: 'Progressive Web Apps', id: 'Progressive Web Apps' },
-  'services.mobile.platforms.deployment': { en: 'App Store Deployment', id: 'App Store Deployment' },
+  'services.mobile.platforms.deployment': { en: 'Store Deployment', id: 'Store Deployment' },
 
   'services.maintenance.detailed.title': { en: 'Maintenance & Support', id: 'Maintenance & Support' },
   'services.maintenance.detailed.description': { en: 'Ongoing maintenance and support services to ensure systems always run optimally.', id: 'Layanan pemeliharaan dan dukungan berkelanjutan untuk memastikan sistem selalu berjalan optimal.' },
@@ -561,7 +627,7 @@ export const translations: Translations = {
   'services.cta.description': { en: 'Consult your company software needs with our expert team. Get the right solution to optimize your business operations.', id: 'Konsultasikan kebutuhan software perusahaan Anda dengan tim expert kami. Dapatkan solusi yang tepat untuk mengoptimalkan operasional bisnis Anda.' },
   'services.cta.consultation': { en: 'Free Consultation', id: 'Konsultasi Gratis' },
   'services.cta.portfolio': { en: 'View Portfolio', id: 'Lihat Portfolio' },
-  
+
 };
 
 export function getTranslation(key: string, lang: 'en' | 'id' = 'id'): string {
