@@ -138,10 +138,6 @@ export const translations: Translations = {
   'services.custom.features.integration': { en: 'Existing System Integration', id: 'Integrasi System Existing' },
   'services.custom.features.support': { en: 'Training & Support', id: 'Training & Support' },
   
-  'services.consulting.features.analysis': { en: 'Business Process Analysis', id: 'Business Process Analysis' },
-  'services.consulting.features.roadmap': { en: 'Technology Roadmap', id: 'Technology Roadmap' },
-  'services.consulting.features.transformation': { en: 'Digital Transformation', id: 'Digital Transformation' },
-  'services.consulting.features.strategy': { en: 'Implementation Strategy', id: 'Implementation Strategy' },
 
   // Industries detailed features
   'industries.construction.features.project': { en: 'Project Management System', id: 'Project Management System' },
@@ -339,19 +335,6 @@ export const translations: Translations = {
   'contact.form.privacy.terms': { en: 'Terms & Conditions', id: 'Syarat & Ketentuan' },
   'contact.form.loading': { en: 'Sending...', id: 'Mengirim...' },
 
-  'services.maintenance.title': { en: 'Maintenance & Technical Support', id: 'Maintenance & Dukungan Teknis' },
-  'services.maintenance.description': { en: 'Comprehensive support services to ensure your systems run smoothly and efficiently.', id: 'Layanan dukungan komprehensif untuk memastikan sistem Anda berjalan lancar dan efisien.' },
-
-  'services.process.title': { en: 'Our Development Process', id: 'Proses Pengembangan Kami' },
-  'services.process.description': { en: 'Structured and proven methodology to deliver high-quality software solutions', id: 'Metodologi terstruktur dan terbukti untuk menghasilkan solusi software berkualitas tinggi' },
-  'services.process.analysis.title': { en: 'Analysis & Planning', id: 'Analisis & Perencanaan' },
-  'services.process.analysis.desc': { en: 'Deep understanding of business requirements and technical specifications', id: 'Pemahaman mendalam terhadap kebutuhan bisnis dan spesifikasi teknis' },
-  'services.process.design.title': { en: 'Design & Architecture', id: 'Desain & Arsitektur' },
-  'services.process.design.desc': { en: 'System architecture design and user interface planning', id: 'Perancangan arsitektur sistem dan perencanaan user interface' },
-  'services.process.development.title': { en: 'Development & Testing', id: 'Development & Testing' },
-  'services.process.development.desc': { en: 'Agile development with continuous testing and quality assurance', id: 'Pengembangan agile dengan testing berkelanjutan dan quality assurance' },
-  'services.process.deployment.title': { en: 'Deployment & Support', id: 'Deployment & Support' },
-  'services.process.deployment.desc': { en: 'System deployment and ongoing maintenance support', id: 'Deployment sistem dan dukungan maintenance berkelanjutan' },
 
   'services.why.title': { en: 'Why Choose LDP Digital?', id: 'Mengapa Memilih LDP Digital?' },
   'services.why.experience.title': { en: 'Proven Experience', id: 'Pengalaman Terbukti' },
@@ -460,6 +443,124 @@ export const translations: Translations = {
   'privacy.hero.title': { en: 'Privacy Policy', id: 'Kebijakan Privasi' },
   'privacy.hero.subtitle': { en: 'Our commitment to protecting your privacy and personal data', id: 'Komitmen kami dalam melindungi privasi dan data pribadi Anda' },
   'privacy.lastUpdated': { en: 'Last updated: January 1, 2025', id: 'Terakhir diperbarui: 1 Januari 2025' },
+
+  // Portfolio Case Study translations
+  'portfolio.casestudy.category': { en: 'ERP Implementation', id: 'ERP Implementation' },
+  'portfolio.casestudy.duration': { en: '6 Months Implementation', id: '6 Bulan Implementasi' },
+  'portfolio.casestudy.title': { en: 'Digital Transformation of Large Construction Company', id: 'Transformasi Digital Perusahaan Konstruksi Besar' },
+  'portfolio.casestudy.description': { en: 'Comprehensive ERP system implementation for construction company with 200+ employees, managing 15+ simultaneous projects with total budget of Rp 500+ billion.', id: 'Implementasi sistem ERP komprehensif untuk perusahaan konstruksi dengan 200+ karyawan, mengelola 15+ proyek simultan dengan budget total Rp 500+ miliar.' },
+  
+  'portfolio.casestudy.challenges.title': { en: 'Challenges', id: 'Tantangan' },
+  'portfolio.casestudy.challenges.manual': { en: 'Manual project management with Excel', id: 'Manajemen proyek manual dengan Excel' },
+  'portfolio.casestudy.challenges.tracking': { en: 'Difficulty tracking materials and equipment', id: 'Kesulitan tracking material dan equipment' },
+  'portfolio.casestudy.challenges.reporting': { en: 'Non real-time financial reporting', id: 'Laporan keuangan tidak real-time' },
+  'portfolio.casestudy.challenges.communication': { en: 'Non-integrated team communication', id: 'Komunikasi tim tidak terintegrasi' },
+  
+  'portfolio.casestudy.solutions.title': { en: 'Solutions', id: 'Solusi' },
+  'portfolio.casestudy.solutions.erp': { en: 'Integrated ERP system with complete modules', id: 'Sistem ERP terintegrasi dengan modul lengkap' },
+  'portfolio.casestudy.solutions.mobile': { en: 'Mobile app for field reporting', id: 'Mobile app untuk field reporting' },
+  'portfolio.casestudy.solutions.dashboard': { en: 'Real-time dashboard for management', id: 'Dashboard real-time untuk management' },
+  'portfolio.casestudy.solutions.workflow': { en: 'Automated workflow and approval system', id: 'Automated workflow dan approval system' },
+  
+  'portfolio.casestudy.results.title': { en: 'Results', id: 'Hasil' },
+  'portfolio.casestudy.results.efficiency': { en: 'Operational efficiency improvement', id: 'Peningkatan efisiensi operasional' },
+  'portfolio.casestudy.results.reporting_time': { en: 'Report generation time reduction', id: 'Pengurangan waktu pembuatan laporan' },
+  'portfolio.casestudy.results.cost_savings': { en: 'Operational cost savings', id: 'Penghematan biaya operasional' },
+  'portfolio.casestudy.results.inventory_accuracy': { en: 'Inventory data accuracy', id: 'Akurasi data inventory' },
+
+  // Portfolio Testimonials translations
+  'portfolio.testimonial1.quote': { en: 'LDP Digital\'s ERP implementation truly changed how we manage projects. Now all data is integrated and reports can be generated in minutes, not days.', id: 'Implementasi ERP dari LDP Digital benar-benar mengubah cara kami mengelola proyek. Sekarang semua data terintegrasi dan laporan bisa dibuat dalam hitungan menit, bukan hari.' },
+  'portfolio.testimonial1.name': { en: 'Budi Santoso', id: 'Budi Santoso' },
+  'portfolio.testimonial1.title': { en: 'Project Manager', id: 'Project Manager' },
+  'portfolio.testimonial1.company': { en: 'PT. Konstruksi Mandiri', id: 'PT. Konstruksi Mandiri' },
+
+  'portfolio.testimonial2.quote': { en: 'The inventory management software developed by LDP Digital really helps us optimize stock and reduce waste. ROI was achieved in 8 months.', id: 'Software inventory management yang dikembangkan LDP Digital sangat membantu kami mengoptimalkan stock dan mengurangi waste. ROI tercapai dalam 8 bulan.' },
+  'portfolio.testimonial2.name': { en: 'Sari Wijaya', id: 'Sari Wijaya' },
+  'portfolio.testimonial2.title': { en: 'Operations Director', id: 'Operations Director' },
+  'portfolio.testimonial2.company': { en: 'PT. Manufaktur Sejahtera', id: 'PT. Manufaktur Sejahtera' },
+
+  'portfolio.testimonial3.quote': { en: 'LDP Digital team is very professional and understands our industry needs. The support provided is also excellent, quick response and targeted solutions.', id: 'Tim LDP Digital sangat profesional dan memahami kebutuhan industri kami. Support yang diberikan juga excellent, respon cepat dan solusi tepat sasaran.' },
+  'portfolio.testimonial3.name': { en: 'Ahmad Rahman', id: 'Ahmad Rahman' },
+  'portfolio.testimonial3.title': { en: 'IT Manager', id: 'IT Manager' },
+  'portfolio.testimonial3.company': { en: 'PT. Teknologi Maju', id: 'PT. Teknologi Maju' },
+
+  // Portfolio Technology section translations
+  'portfolio.tech.frontend': { en: 'Frontend', id: 'Frontend' },
+  'portfolio.tech.backend': { en: 'Backend', id: 'Backend' },
+  'portfolio.tech.database': { en: 'Database', id: 'Database' },
+  'portfolio.tech.cloud': { en: 'Cloud & DevOps', id: 'Cloud & DevOps' },
+
+  // Services Page - Additional translations for hardcoded content
+  'services.custom.detailed.title': { en: 'Custom Software', id: 'Software Custom' },
+  'services.custom.detailed.description': { en: 'Custom application development tailored to your unique operational needs. From concept to implementation with cutting-edge technology.', id: 'Pengembangan aplikasi khusus sesuai kebutuhan unik operasional perusahaan Anda. Dari konsep hingga implementasi dengan teknologi terdepan.' },
+  'services.custom.services.title': { en: 'Services Include:', id: 'Layanan Meliputi:' },
+  'services.custom.services.analysis': { en: 'In-depth Needs Analysis', id: 'Analisis Kebutuhan Mendalam' },
+  'services.custom.services.design': { en: 'Modern UI/UX Design', id: 'UI/UX Design Modern' },
+  'services.custom.services.development': { en: 'Development & Testing', id: 'Development & Testing' },
+  'services.custom.services.integration': { en: 'Integration with Existing Systems', id: 'Integrasi dengan Sistem Existing' },
+  'services.custom.services.training': { en: 'Training & Documentation', id: 'Training & Documentation' },
+  'services.custom.services.maintenance': { en: 'Maintenance & Support', id: 'Maintenance & Support' },
+  'services.custom.tech.title': { en: 'Technologies We Use:', id: 'Teknologi yang Kami Gunakan:' },
+
+  'services.consulting.detailed.title': { en: 'Digital Consulting', id: 'Konsultasi Digital' },
+  'services.consulting.detailed.description': { en: 'In-depth analysis of business processes to find optimal technology solutions. Targeted digital transformation strategy.', id: 'Analisis mendalam terhadap proses bisnis untuk menemukan solusi teknologi yang optimal. Strategi transformasi digital yang tepat sasaran.' },
+  'services.consulting.process.title': { en: 'Consultation Process:', id: 'Proses Konsultasi:' },
+  'services.consulting.process.business': { en: 'Business Process Analysis', id: 'Business Process Analysis' },
+  'services.consulting.process.assessment': { en: 'Technology Assessment', id: 'Technology Assessment' },
+  'services.consulting.process.roadmap': { en: 'Digital Transformation Roadmap', id: 'Digital Transformation Roadmap' },
+  'services.consulting.process.strategy': { en: 'Implementation Strategy', id: 'Implementation Strategy' },
+  'services.consulting.process.change': { en: 'Change Management', id: 'Change Management' },
+  'services.consulting.process.roi': { en: 'ROI Measurement', id: 'ROI Measurement' },
+
+  'services.website.detailed.title': { en: 'Website Development', id: 'Pengembangan Website' },
+  'services.website.detailed.description': { en: 'Professional, responsive and SEO-friendly websites to enhance your company\'s online presence.', id: 'Website profesional yang responsif dan SEO-friendly untuk meningkatkan online presence perusahaan Anda.' },
+  'services.website.types.title': { en: 'Website Types:', id: 'Jenis Website:' },
+  'services.website.types.profile': { en: 'Company Profile', id: 'Company Profile' },
+  'services.website.types.ecommerce': { en: 'E-commerce Platform', id: 'E-commerce Platform' },
+  'services.website.types.webapp': { en: 'Web Application', id: 'Web Application' },
+  'services.website.types.landing': { en: 'Landing Pages', id: 'Landing Pages' },
+  'services.website.types.cms': { en: 'CMS Development', id: 'CMS Development' },
+  'services.website.types.api': { en: 'API Development', id: 'API Development' },
+
+  'services.mobile.detailed.title': { en: 'Mobile Applications', id: 'Aplikasi Mobile' },
+  'services.mobile.detailed.description': { en: 'Native and cross-platform mobile applications for iOS and Android that are user-friendly and performant.', id: 'Aplikasi mobile native dan cross-platform untuk iOS dan Android yang user-friendly dan performant.' },
+  'services.mobile.platforms.title': { en: 'Platforms:', id: 'Platform:' },
+  'services.mobile.platforms.ios': { en: 'iOS Native Development', id: 'iOS Native Development' },
+  'services.mobile.platforms.android': { en: 'Android Native Development', id: 'Android Native Development' },
+  'services.mobile.platforms.react': { en: 'React Native', id: 'React Native' },
+  'services.mobile.platforms.flutter': { en: 'Flutter', id: 'Flutter' },
+  'services.mobile.platforms.pwa': { en: 'Progressive Web Apps', id: 'Progressive Web Apps' },
+  'services.mobile.platforms.deployment': { en: 'App Store Deployment', id: 'App Store Deployment' },
+
+  'services.maintenance.detailed.title': { en: 'Maintenance & Support', id: 'Maintenance & Support' },
+  'services.maintenance.detailed.description': { en: 'Ongoing maintenance and support services to ensure systems always run optimally.', id: 'Layanan pemeliharaan dan dukungan berkelanjutan untuk memastikan sistem selalu berjalan optimal.' },
+  'services.maintenance.support.title': { en: 'Support Services:', id: 'Layanan Support:' },
+  'services.maintenance.support.technical': { en: '24/7 Technical Support', id: '24/7 Technical Support' },
+  'services.maintenance.support.updates': { en: 'Regular System Updates', id: 'Regular System Updates' },
+  'services.maintenance.support.monitoring': { en: 'Performance Monitoring', id: 'Performance Monitoring' },
+  'services.maintenance.support.security': { en: 'Security Patches', id: 'Security Patches' },
+  'services.maintenance.support.backup': { en: 'Backup & Recovery', id: 'Backup & Recovery' },
+  'services.maintenance.support.training': { en: 'User Training', id: 'User Training' },
+
+  // Services Process section
+  'services.process.title': { en: 'Our Work Process', id: 'Proses Kerja Kami' },
+  'services.process.subtitle': { en: 'Proven methodology to deliver high-quality software solutions', id: 'Metodologi yang terbukti untuk menghasilkan solusi software berkualitas tinggi' },
+  'services.process.step1.title': { en: 'Discovery & Analysis', id: 'Discovery & Analysis' },
+  'services.process.step1.desc': { en: 'In-depth analysis of business needs and existing processes to comprehensively understand requirements.', id: 'Analisis mendalam kebutuhan bisnis dan proses existing untuk memahami requirements secara komprehensif.' },
+  'services.process.step2.title': { en: 'Planning & Design', id: 'Planning & Design' },
+  'services.process.step2.desc': { en: 'System architecture planning, UI/UX design, and prototype creation for concept validation.', id: 'Perencanaan arsitektur sistem, UI/UX design, dan pembuatan prototype untuk validasi konsep.' },
+  'services.process.step3.title': { en: 'Development', id: 'Development' },
+  'services.process.step3.desc': { en: 'Software development with Agile methodology, regular testing, and continuous communication.', id: 'Pengembangan software dengan metodologi Agile, regular testing, dan komunikasi berkelanjutan.' },
+  'services.process.step4.title': { en: 'Testing & Deployment', id: 'Testing & Deployment' },
+  'services.process.step4.desc': { en: 'Comprehensive quality assurance, user acceptance testing, and deployment to production environment.', id: 'Quality assurance menyeluruh, user acceptance testing, dan deployment ke production environment.' },
+  'services.process.step5.title': { en: 'Support & Maintenance', id: 'Support & Maintenance' },
+  'services.process.step5.desc': { en: 'User training, complete documentation, and ongoing support services to ensure successful implementation.', id: 'Training user, dokumentasi lengkap, dan layanan support berkelanjutan untuk memastikan kesuksesan implementasi.' },
+
+  // Services CTA section
+  'services.cta.title': { en: 'Ready to Start Your Project?', id: 'Siap Memulai Proyek Anda?' },
+  'services.cta.description': { en: 'Consult your company software needs with our expert team. Get the right solution to optimize your business operations.', id: 'Konsultasikan kebutuhan software perusahaan Anda dengan tim expert kami. Dapatkan solusi yang tepat untuk mengoptimalkan operasional bisnis Anda.' },
+  'services.cta.consultation': { en: 'Free Consultation', id: 'Konsultasi Gratis' },
+  'services.cta.portfolio': { en: 'View Portfolio', id: 'Lihat Portfolio' },
   
 };
 
