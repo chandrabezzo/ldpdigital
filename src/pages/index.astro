@@ -30,10 +30,10 @@ import Footer from '../components/Footer.astro';
             <h3 data-i18n="services.erp.title">Sistem ERP Terintegrasi</h3>
             <p data-i18n="services.erp.description">Enterprise Resource Planning yang menghubungkan semua aspek bisnis Anda dalam satu platform terpadu.</p>
             <ul>
-              <li>Manajemen Keuangan</li>
-              <li>Inventory & Supply Chain</li>
-              <li>Human Resources</li>
-              <li>Customer Relations</li>
+              <li data-i18n="services.erp.features.finance">Manajemen Keuangan</li>
+              <li data-i18n="services.erp.features.inventory">Inventory & Supply Chain</li>
+              <li data-i18n="services.erp.features.hr">Human Resources</li>
+              <li data-i18n="services.erp.features.crm">Customer Relations</li>
             </ul>
             <a href="/services#erp" class="service-link" data-i18n="services.learn_more">Pelajari Lebih Lanjut</a>
           </div>
@@ -49,10 +49,10 @@ import Footer from '../components/Footer.astro';
             <h3 data-i18n="services.custom.title">Software Custom</h3>
             <p data-i18n="services.custom.description">Pengembangan aplikasi khusus sesuai kebutuhan unik operasional perusahaan Anda.</p>
             <ul>
-              <li>Analisis Kebutuhan Mendalam</li>
-              <li>User Interface Modern</li>
-              <li>Integrasi System Existing</li>
-              <li>Training & Support</li>
+              <li data-i18n="services.custom.features.analysis">Analisis Kebutuhan Mendalam</li>
+              <li data-i18n="services.custom.features.ui">User Interface Modern</li>
+              <li data-i18n="services.custom.features.integration">Integrasi System Existing</li>
+              <li data-i18n="services.custom.features.support">Training & Support</li>
             </ul>
             <a href="/services#custom" class="service-link" data-i18n="services.learn_more">Pelajari Lebih Lanjut</a>
           </div>
@@ -66,10 +66,10 @@ import Footer from '../components/Footer.astro';
             <h3 data-i18n="services.consulting.title">Konsultasi Digital</h3>
             <p data-i18n="services.consulting.description">Analisis mendalam terhadap proses bisnis untuk menemukan solusi teknologi yang optimal.</p>
             <ul>
-              <li>Business Process Analysis</li>
-              <li>Technology Roadmap</li>
-              <li>Digital Transformation</li>
-              <li>Implementation Strategy</li>
+              <li data-i18n="services.consulting.features.analysis">Business Process Analysis</li>
+              <li data-i18n="services.consulting.features.roadmap">Technology Roadmap</li>
+              <li data-i18n="services.consulting.features.transformation">Digital Transformation</li>
+              <li data-i18n="services.consulting.features.strategy">Implementation Strategy</li>
             </ul>
             <a href="/services#consulting" class="service-link" data-i18n="services.learn_more">Pelajari Lebih Lanjut</a>
           </div>
@@ -96,10 +96,10 @@ import Footer from '../components/Footer.astro';
                 <p class="industry-subtitle" data-i18n="industries.construction.subtitle">Fokus Utama Kami</p>
                 <p data-i18n="industries.construction.description">Dengan pengalaman mendalam di industri konstruksi, kami memahami kompleksitas manajemen proyek, pengadaan material, dan koordinasi tim.</p>
                 <ul class="industry-features">
-                  <li>Project Management System</li>
-                  <li>Material & Equipment Tracking</li>
-                  <li>Financial Control & Budgeting</li>
-                  <li>Quality Assurance System</li>
+                  <li data-i18n="industries.construction.features.project">Project Management System</li>
+                  <li data-i18n="industries.construction.features.material">Material & Equipment Tracking</li>
+                  <li data-i18n="industries.construction.features.financial">Financial Control & Budgeting</li>
+                  <li data-i18n="industries.construction.features.quality">Quality Assurance System</li>
                 </ul>
                 <a href="/industries/construction" class="btn btn-primary" data-i18n="industries.case_study">Lihat Case Study</a>
               </div>
@@ -116,7 +116,7 @@ import Footer from '../components/Footer.astro';
                 </svg>
               </div>
               <h4 data-i18n="industries.manufacturing">Manufaktur</h4>
-              <p>Sistem produksi dan quality control terintegrasi</p>
+              <p data-i18n="industries.manufacturing.description">Sistem produksi dan quality control terintegrasi</p>
             </div>
 
             <div class="industry-item fade-in-up">
@@ -129,7 +129,7 @@ import Footer from '../components/Footer.astro';
                 </svg>
               </div>
               <h4 data-i18n="industries.retail">Retail & E-commerce</h4>
-              <p>Point of sale dan manajemen inventory real-time</p>
+              <p data-i18n="industries.retail.description">Point of sale dan manajemen inventory real-time</p>
             </div>
 
             <div class="industry-item fade-in-up">
@@ -139,7 +139,7 @@ import Footer from '../components/Footer.astro';
                 </svg>
               </div>
               <h4 data-i18n="industries.healthcare">Healthcare</h4>
-              <p>Sistem manajemen rumah sakit dan klinik</p>
+              <p data-i18n="industries.healthcare.description">Sistem manajemen rumah sakit dan klinik</p>
             </div>
 
             <div class="industry-item fade-in-up">
@@ -152,7 +152,7 @@ import Footer from '../components/Footer.astro';
                 </svg>
               </div>
               <h4 data-i18n="industries.education">Pendidikan</h4>
-              <p>Learning management dan administrasi akademik</p>
+              <p data-i18n="industries.education.description">Learning management dan administrasi akademik</p>
             </div>
           </div>
         </div>
@@ -171,25 +171,25 @@ import Footer from '../components/Footer.astro';
           <div class="advantage-card fade-in-up">
             <div class="advantage-number">01</div>
             <h3 data-i18n="why.expertise">Expertise Mendalam</h3>
-            <p>Tim developer berpengalaman dengan sertifikasi internasional dan pemahaman mendalam terhadap industri konstruksi.</p>
+            <p data-i18n="why.expertise.description">Tim developer berpengalaman dengan sertifikasi internasional dan pemahaman mendalam terhadap industri konstruksi.</p>
           </div>
 
           <div class="advantage-card fade-in-up">
             <div class="advantage-number">02</div>
             <h3 data-i18n="why.technology">Teknologi Terdepan</h3>
-            <p>Menggunakan framework dan tools terbaru untuk memastikan performa optimal dan keamanan tinggi.</p>
+            <p data-i18n="why.technology.description">Menggunakan framework dan tools terbaru untuk memastikan performa optimal dan keamanan tinggi.</p>
           </div>
 
           <div class="advantage-card fade-in-up">
             <div class="advantage-number">03</div>
             <h3 data-i18n="why.support">Support Berkelanjutan</h3>
-            <p>Layanan maintenance dan update berkala untuk memastikan sistem selalu berjalan optimal.</p>
+            <p data-i18n="why.support.description">Layanan maintenance dan update berkala untuk memastikan sistem selalu berjalan optimal.</p>
           </div>
 
           <div class="advantage-card fade-in-up">
             <div class="advantage-number">04</div>
             <h3 data-i18n="why.roi">ROI Terbukti</h3>
-            <p>Track record meningkatkan efisiensi operasional klien hingga 40% melalui digitalisasi proses bisnis.</p>
+            <p data-i18n="why.roi.description">Track record meningkatkan efisiensi operasional klien hingga 40% melalui digitalisasi proses bisnis.</p>
           </div>
         </div>
       </div>

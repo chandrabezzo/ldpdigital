@@ -22,12 +22,12 @@ import Footer from '../components/Footer.astro';
       </div>
       <div class="container">
         <div class="hero-content fade-in-up">
-          <h1>Layanan Unggulan Kami</h1>
-          <p class="hero-subtitle">Solusi software terpadu untuk mengoptimalkan operasional bisnis Anda</p>
+          <h1 data-i18n="services.hero.title">Layanan Unggulan Kami</h1>
+          <p class="hero-subtitle" data-i18n="services.hero.subtitle">Solusi software terpadu untuk mengoptimalkan operasional bisnis Anda</p>
           <div class="hero-breadcrumb">
-            <a href="/">Beranda</a>
+            <a href="/" data-i18n="breadcrumb.home">Beranda</a>
             <span>/</span>
-            <span>Layanan</span>
+            <span data-i18n="breadcrumb.services">Layanan</span>
           </div>
         </div>
       </div>
@@ -37,8 +37,8 @@ import Footer from '../components/Footer.astro';
     <section class="services-overview">
       <div class="container">
         <div class="section-header fade-in-up">
-          <h2>Solusi Teknologi Terdepan</h2>
-          <p>Kami menyediakan berbagai layanan software development yang disesuaikan dengan kebutuhan bisnis Anda</p>
+          <h2 data-i18n="services.overview.title">Solusi Teknologi Terdepan</h2>
+          <p data-i18n="services.overview.description">Kami menyediakan berbagai layanan software development yang disesuaikan dengan kebutuhan bisnis Anda</p>
         </div>
 
         <div class="services-grid">
@@ -52,44 +52,44 @@ import Footer from '../components/Footer.astro';
                   <line x1="12" y1="22.08" x2="12" y2="12"/>
                 </svg>
               </div>
-              <div class="service-badge">Unggulan</div>
+              <div class="service-badge" data-i18n="services.erp.badge">Unggulan</div>
             </div>
-            <h3>Sistem ERP Terintegrasi</h3>
-            <p class="service-description">
+            <h3 data-i18n="services.erp.title">Sistem ERP Terintegrasi</h3>
+            <p class="service-description" data-i18n="services.erp.description">
               Enterprise Resource Planning yang menghubungkan semua aspek bisnis Anda dalam satu platform terpadu. 
               Solusi komprehensif untuk manajemen perusahaan modern.
             </p>
             
             <div class="service-features">
-              <h4>Fitur Utama:</h4>
+              <h4 data-i18n="services.erp.features.title">Fitur Utama:</h4>
               <ul>
-                <li>Manajemen Keuangan & Akuntansi</li>
-                <li>Inventory & Supply Chain Management</li>
-                <li>Human Resources Management</li>
-                <li>Customer Relationship Management</li>
-                <li>Project Management & Tracking</li>
-                <li>Real-time Reporting & Analytics</li>
+                <li data-i18n="services.erp.features.finance">Manajemen Keuangan & Akuntansi</li>
+                <li data-i18n="services.erp.features.inventory">Inventory & Supply Chain Management</li>
+                <li data-i18n="services.erp.features.hr">Human Resources Management</li>
+                <li data-i18n="services.erp.features.crm">Customer Relationship Management</li>
+                <li data-i18n="services.erp.features.project">Project Management & Tracking</li>
+                <li data-i18n="services.erp.features.reporting">Real-time Reporting & Analytics</li>
               </ul>
             </div>
 
             <div class="service-benefits">
-              <h4>Keuntungan:</h4>
+              <h4 data-i18n="services.erp.benefits.title">Keuntungan:</h4>
               <div class="benefits-grid">
                 <div class="benefit-item">
                   <span class="benefit-icon">📈</span>
-                  <span>Efisiensi operasional hingga 40%</span>
+                  <span data-i18n="services.erp.benefits.efficiency">Efisiensi operasional hingga 40%</span>
                 </div>
                 <div class="benefit-item">
                   <span class="benefit-icon">💰</span>
-                  <span>Penghematan biaya operasional</span>
+                  <span data-i18n="services.erp.benefits.cost">Penghematan biaya operasional</span>
                 </div>
                 <div class="benefit-item">
                   <span class="benefit-icon">📊</span>
-                  <span>Real-time business insights</span>
+                  <span data-i18n="services.erp.benefits.decision">Pengambilan keputusan lebih baik</span>
                 </div>
                 <div class="benefit-item">
                   <span class="benefit-icon">🔄</span>
-                  <span>Otomatisasi proses bisnis</span>
+                  <span data-i18n="services.erp.benefits.integration">Integrasi data real-time</span>
                 </div>
               </div>
             </div>
@@ -375,6 +375,7 @@ import Footer from '../components/Footer.astro';
     font-size: 1.5rem;
     margin-bottom: var(--spacing-md);
     opacity: 0.9;
+    color: white;
   }
 
   .hero-breadcrumb {
@@ -625,6 +626,7 @@ import Footer from '../components/Footer.astro';
     margin-right: auto;
     opacity: 0.95;
     line-height: 1.6;
+    color: white;
   }
 
   .cta-actions {

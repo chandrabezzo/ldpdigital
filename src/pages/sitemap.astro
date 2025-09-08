@@ -14,12 +14,12 @@ import Footer from '../components/Footer.astro';
     <section class="sitemap-hero">
       <div class="container">
         <div class="hero-content fade-in-up">
-          <h1>Sitemap</h1>
-          <p class="hero-subtitle">Peta lengkap semua halaman dan konten di website LDP Digital</p>
+          <h1 data-i18n="sitemap.hero.title">Sitemap</h1>
+          <p class="hero-subtitle" data-i18n="sitemap.hero.subtitle">Peta lengkap semua halaman dan konten di website LDP Digital</p>
           <div class="hero-breadcrumb">
-            <a href="/">Beranda</a>
+            <a href="/" data-i18n="breadcrumb.home">Beranda</a>
             <span>/</span>
-            <span>Sitemap</span>
+            <span data-i18n="breadcrumb.sitemap">Sitemap</span>
           </div>
         </div>
       </div>
@@ -38,42 +38,42 @@ import Footer from '../components/Footer.astro';
                   <polyline points="9,22 9,12 15,12 15,22"/>
                 </svg>
               </div>
-              <h2>Halaman Utama</h2>
+              <h2 data-i18n="sitemap.mainPages.title">Halaman Utama</h2>
             </div>
             <div class="sitemap-links">
               <a href="/" class="sitemap-link">
                 <div class="link-icon">🏠</div>
                 <div class="link-content">
-                  <h3>Beranda</h3>
-                  <p>Halaman utama dengan overview layanan dan company profile</p>
+                  <h3 data-i18n="sitemap.mainPages.home.title">Beranda</h3>
+                  <p data-i18n="sitemap.mainPages.home.desc">Halaman utama dengan overview layanan dan company profile</p>
                 </div>
               </a>
               <a href="/about" class="sitemap-link">
                 <div class="link-icon">👥</div>
                 <div class="link-content">
-                  <h3>Tentang Kami</h3>
-                  <p>Sejarah perusahaan, visi misi, tim, dan nilai-nilai inti</p>
+                  <h3 data-i18n="sitemap.mainPages.about.title">Tentang Kami</h3>
+                  <p data-i18n="sitemap.mainPages.about.desc">Sejarah perusahaan, visi misi, tim, dan nilai-nilai inti</p>
                 </div>
               </a>
               <a href="/services" class="sitemap-link">
                 <div class="link-icon">⚙️</div>
                 <div class="link-content">
-                  <h3>Layanan</h3>
-                  <p>Detail lengkap semua layanan software development</p>
+                  <h3 data-i18n="sitemap.mainPages.services.title">Layanan</h3>
+                  <p data-i18n="sitemap.mainPages.services.desc">Detail lengkap semua layanan software development</p>
                 </div>
               </a>
               <a href="/portfolio" class="sitemap-link">
                 <div class="link-icon">💼</div>
                 <div class="link-content">
-                  <h3>Portfolio</h3>
-                  <p>Showcase proyek-proyek yang telah diselesaikan</p>
+                  <h3 data-i18n="sitemap.mainPages.portfolio.title">Portfolio</h3>
+                  <p data-i18n="sitemap.mainPages.portfolio.desc">Showcase proyek-proyek yang telah diselesaikan</p>
                 </div>
               </a>
               <a href="/contact" class="sitemap-link">
                 <div class="link-icon">📞</div>
                 <div class="link-content">
-                  <h3>Kontak</h3>
-                  <p>Form konsultasi dan informasi kontak lengkap</p>
+                  <h3 data-i18n="sitemap.mainPages.contact.title">Kontak</h3>
+                  <p data-i18n="sitemap.mainPages.contact.desc">Form konsultasi dan informasi kontak lengkap</p>
                 </div>
               </a>
             </div>
@@ -89,49 +89,49 @@ import Footer from '../components/Footer.astro';
                   <line x1="12" y1="17" x2="12" y2="21"/>
                 </svg>
               </div>
-              <h2>Layanan Detail</h2>
+              <h2 data-i18n="sitemap.servicesDetail.title">Layanan Detail</h2>
             </div>
             <div class="sitemap-links">
               <a href="/services#erp" class="sitemap-link">
                 <div class="link-icon">🏗️</div>
                 <div class="link-content">
-                  <h3>Sistem ERP</h3>
-                  <p>Enterprise Resource Planning terintegrasi</p>
+                  <h3 data-i18n="sitemap.servicesDetail.erp.title">Sistem ERP</h3>
+                  <p data-i18n="sitemap.servicesDetail.erp.desc">Enterprise Resource Planning terintegrasi</p>
                 </div>
               </a>
               <a href="/services#custom" class="sitemap-link">
                 <div class="link-icon">💻</div>
                 <div class="link-content">
-                  <h3>Software Custom</h3>
-                  <p>Aplikasi khusus sesuai kebutuhan bisnis</p>
+                  <h3 data-i18n="sitemap.servicesDetail.custom.title">Software Custom</h3>
+                  <p data-i18n="sitemap.servicesDetail.custom.desc">Aplikasi khusus sesuai kebutuhan bisnis</p>
                 </div>
               </a>
               <a href="/services#consulting" class="sitemap-link">
                 <div class="link-icon">💡</div>
                 <div class="link-content">
-                  <h3>Konsultasi Digital</h3>
-                  <p>Analisis proses bisnis dan transformasi digital</p>
+                  <h3 data-i18n="sitemap.servicesDetail.consulting.title">Konsultasi Digital</h3>
+                  <p data-i18n="sitemap.servicesDetail.consulting.desc">Analisis proses bisnis dan transformasi digital</p>
                 </div>
               </a>
               <a href="/services#website" class="sitemap-link">
                 <div class="link-icon">🌐</div>
                 <div class="link-content">
-                  <h3>Pengembangan Website</h3>
-                  <p>Website profesional dan e-commerce</p>
+                  <h3 data-i18n="sitemap.servicesDetail.website.title">Pengembangan Website</h3>
+                  <p data-i18n="sitemap.servicesDetail.website.desc">Website profesional dan e-commerce</p>
                 </div>
               </a>
               <a href="/services#mobile" class="sitemap-link">
                 <div class="link-icon">📱</div>
                 <div class="link-content">
-                  <h3>Aplikasi Mobile</h3>
-                  <p>Mobile apps untuk iOS dan Android</p>
+                  <h3 data-i18n="sitemap.servicesDetail.mobile.title">Aplikasi Mobile</h3>
+                  <p data-i18n="sitemap.servicesDetail.mobile.desc">Mobile apps untuk iOS dan Android</p>
                 </div>
               </a>
               <a href="/services#maintenance" class="sitemap-link">
                 <div class="link-icon">🛠️</div>
                 <div class="link-content">
-                  <h3>Maintenance & Support</h3>
-                  <p>Pemeliharaan sistem dan dukungan teknis</p>
+                  <h3 data-i18n="sitemap.servicesDetail.maintenance.title">Maintenance & Support</h3>
+                  <p data-i18n="sitemap.servicesDetail.maintenance.desc">Pemeliharaan sistem dan dukungan teknis berkelanjutan</p>
                 </div>
               </a>
             </div>
@@ -146,42 +146,42 @@ import Footer from '../components/Footer.astro';
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
               </div>
-              <h2>Industri</h2>
+              <h2 data-i18n="sitemap.industries.title">Industri</h2>
             </div>
             <div class="sitemap-links">
               <a href="/industries/construction" class="sitemap-link">
                 <div class="link-icon">🏗️</div>
                 <div class="link-content">
-                  <h3>Konstruksi & Engineering</h3>
-                  <p>Solusi khusus untuk industri konstruksi</p>
+                  <h3 data-i18n="sitemap.industries.construction.title">Konstruksi & Engineering</h3>
+                  <p data-i18n="sitemap.industries.construction.desc">Solusi khusus untuk industri konstruksi</p>
                 </div>
               </a>
               <a href="/industries/manufacturing" class="sitemap-link">
                 <div class="link-icon">🏭</div>
                 <div class="link-content">
-                  <h3>Manufaktur</h3>
-                  <p>Sistem produksi dan quality control</p>
+                  <h3 data-i18n="sitemap.industries.manufacturing.title">Manufaktur</h3>
+                  <p data-i18n="sitemap.industries.manufacturing.desc">Sistem produksi dan quality control</p>
                 </div>
               </a>
               <a href="/industries/retail" class="sitemap-link">
                 <div class="link-icon">🛒</div>
                 <div class="link-content">
-                  <h3>Retail & E-commerce</h3>
-                  <p>Point of sale dan manajemen inventory</p>
+                  <h3 data-i18n="sitemap.industries.retail.title">Retail & E-commerce</h3>
+                  <p data-i18n="sitemap.industries.retail.desc">Point of sale dan manajemen inventory</p>
                 </div>
               </a>
               <a href="/industries/healthcare" class="sitemap-link">
                 <div class="link-icon">🏥</div>
                 <div class="link-content">
-                  <h3>Healthcare</h3>
-                  <p>Sistem manajemen rumah sakit dan klinik</p>
+                  <h3 data-i18n="sitemap.industries.healthcare.title">Healthcare</h3>
+                  <p data-i18n="sitemap.industries.healthcare.desc">Sistem manajemen rumah sakit dan klinik</p>
                 </div>
               </a>
               <a href="/industries/education" class="sitemap-link">
                 <div class="link-icon">🎓</div>
                 <div class="link-content">
-                  <h3>Pendidikan</h3>
-                  <p>Learning management dan administrasi akademik</p>
+                  <h3 data-i18n="sitemap.industries.education.title">Pendidikan</h3>
+                  <p data-i18n="sitemap.industries.education.desc">Learning management dan administrasi akademik</p>
                 </div>
               </a>
             </div>
@@ -199,28 +199,28 @@ import Footer from '../components/Footer.astro';
                   <polyline points="10,9 9,9 8,9"/>
                 </svg>
               </div>
-              <h2>Halaman Legal</h2>
+              <h2 data-i18n="sitemap.legal.title">Halaman Legal</h2>
             </div>
             <div class="sitemap-links">
               <a href="/privacy" class="sitemap-link">
                 <div class="link-icon">🔒</div>
                 <div class="link-content">
-                  <h3>Kebijakan Privasi</h3>
-                  <p>Perlindungan data pribadi dan informasi pengguna</p>
+                  <h3 data-i18n="sitemap.legal.privacy.title">Kebijakan Privasi</h3>
+                  <p data-i18n="sitemap.legal.privacy.desc">Perlindungan data pribadi dan informasi pengguna</p>
                 </div>
               </a>
               <a href="/terms" class="sitemap-link">
                 <div class="link-icon">📋</div>
                 <div class="link-content">
-                  <h3>Syarat & Ketentuan</h3>
-                  <p>Ketentuan penggunaan layanan dan kerjasama</p>
+                  <h3 data-i18n="sitemap.legal.terms.title">Syarat & Ketentuan</h3>
+                  <p data-i18n="sitemap.legal.terms.desc">Ketentuan penggunaan layanan dan kerjasama</p>
                 </div>
               </a>
               <a href="/sitemap" class="sitemap-link current">
                 <div class="link-icon">🗺️</div>
                 <div class="link-content">
-                  <h3>Sitemap</h3>
-                  <p>Peta navigasi lengkap website</p>
+                  <h3 data-i18n="sitemap.legal.sitemap.title">Sitemap</h3>
+                  <p data-i18n="sitemap.legal.sitemap.desc">Peta navigasi lengkap website</p>
                 </div>
               </a>
             </div>
@@ -235,35 +235,35 @@ import Footer from '../components/Footer.astro';
                   <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                 </svg>
               </div>
-              <h2>Resources</h2>
+              <h2 data-i18n="sitemap.resources.title">Resources</h2>
             </div>
             <div class="sitemap-links">
               <a href="/blog" class="sitemap-link">
                 <div class="link-icon">📝</div>
                 <div class="link-content">
-                  <h3>Blog</h3>
-                  <p>Artikel tentang teknologi dan best practices</p>
+                  <h3 data-i18n="sitemap.resources.blog.title">Blog</h3>
+                  <p data-i18n="sitemap.resources.blog.desc">Artikel tentang teknologi dan best practices</p>
                 </div>
               </a>
               <a href="/case-studies" class="sitemap-link">
                 <div class="link-icon">📊</div>
                 <div class="link-content">
-                  <h3>Case Studies</h3>
-                  <p>Studi kasus implementasi proyek-proyek sukses</p>
+                  <h3 data-i18n="sitemap.resources.caseStudies.title">Case Studies</h3>
+                  <p data-i18n="sitemap.resources.caseStudies.desc">Studi kasus implementasi proyek-proyek sukses</p>
                 </div>
               </a>
               <a href="/downloads" class="sitemap-link">
                 <div class="link-icon">📥</div>
                 <div class="link-content">
-                  <h3>Downloads</h3>
-                  <p>Brochure, whitepaper, dan materi marketing</p>
+                  <h3 data-i18n="sitemap.resources.downloads.title">Downloads</h3>
+                  <p data-i18n="sitemap.resources.downloads.desc">Brochure, whitepaper, dan materi marketing</p>
                 </div>
               </a>
               <a href="/faq" class="sitemap-link">
                 <div class="link-icon">❓</div>
                 <div class="link-content">
-                  <h3>FAQ</h3>
-                  <p>Pertanyaan yang sering diajukan</p>
+                  <h3 data-i18n="sitemap.resources.faq.title">FAQ</h3>
+                  <p data-i18n="sitemap.resources.faq.desc">Pertanyaan yang sering diajukan</p>
                 </div>
               </a>
             </div>
@@ -278,7 +278,7 @@ import Footer from '../components/Footer.astro';
                   <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2 2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
                 </svg>
               </div>
-              <h2>Quick Actions</h2>
+              <h2 data-i18n="sitemap.quickActions.title">Quick Actions</h2>
             </div>
             <div class="quick-actions">
               <a href="/contact" class="action-card">
@@ -287,8 +287,8 @@ import Footer from '../components/Footer.astro';
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                   </svg>
                 </div>
-                <h3>Konsultasi Gratis</h3>
-                <p>Mulai diskusi tentang kebutuhan software Anda</p>
+                <h3 data-i18n="sitemap.quickActions.consultation.title">Konsultasi Gratis</h3>
+                <p data-i18n="sitemap.quickActions.consultation.desc">Mulai diskusi tentang kebutuhan software Anda</p>
               </a>
               <a href="tel:+6221XXXXXXX" class="action-card">
                 <div class="action-icon">
@@ -296,8 +296,8 @@ import Footer from '../components/Footer.astro';
                     <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                   </svg>
                 </div>
-                <h3>Hubungi Langsung</h3>
-                <p>Telepon untuk konsultasi cepat</p>
+                <h3 data-i18n="sitemap.quickActions.call.title">Hubungi Langsung</h3>
+                <p data-i18n="sitemap.quickActions.call.desc">Telepon untuk konsultasi cepat</p>
               </a>
               <a href="https://wa.me/6281XXXXXXXX" class="action-card" target="_blank">
                 <div class="action-icon">
@@ -305,8 +305,8 @@ import Footer from '../components/Footer.astro';
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087"/>
                   </svg>
                 </div>
-                <h3>WhatsApp</h3>
-                <p>Chat langsung untuk respon cepat</p>
+                <h3 data-i18n="sitemap.quickActions.whatsapp.title">WhatsApp</h3>
+                <p data-i18n="sitemap.quickActions.whatsapp.desc">Chat langsung untuk respon cepat</p>
               </a>
               <a href="mailto:info@ldpdigital.com" class="action-card">
                 <div class="action-icon">
@@ -315,8 +315,8 @@ import Footer from '../components/Footer.astro';
                     <polyline points="22,6 12,13 2,6"/>
                   </svg>
                 </div>
-                <h3>Email</h3>
-                <p>Kirim email untuk inquiry detail</p>
+                <h3 data-i18n="sitemap.quickActions.email.title">Email</h3>
+                <p data-i18n="sitemap.quickActions.email.desc">Kirim email untuk inquiry detail</p>
               </a>
             </div>
           </div>
@@ -325,25 +325,25 @@ import Footer from '../components/Footer.astro';
         <!-- Site Statistics -->
         <div class="site-stats fade-in-up">
           <div class="stats-header">
-            <h2>Statistik Website</h2>
-            <p>Informasi lengkap tentang konten website LDP Digital</p>
+            <h2 data-i18n="sitemap.stats.title">Statistik Website</h2>
+            <p data-i18n="sitemap.stats.subtitle">Informasi lengkap tentang konten website LDP Digital</p>
           </div>
           <div class="stats-grid">
             <div class="stat-card">
               <div class="stat-number">8</div>
-              <div class="stat-label">Halaman Utama</div>
+              <div class="stat-label" data-i18n="sitemap.stats.mainPages">Halaman Utama</div>
             </div>
             <div class="stat-card">
               <div class="stat-number">6</div>
-              <div class="stat-label">Layanan Detail</div>
+              <div class="stat-label" data-i18n="sitemap.stats.serviceDetails">Layanan Detail</div>
             </div>
             <div class="stat-card">
               <div class="stat-number">5</div>
-              <div class="stat-label">Industri Focus</div>
+              <div class="stat-label" data-i18n="sitemap.stats.industryFocus">Industri Focus</div>
             </div>
             <div class="stat-card">
               <div class="stat-number">50+</div>
-              <div class="stat-label">Portfolio Projects</div>
+              <div class="stat-label" data-i18n="sitemap.stats.portfolioProjects">Portfolio Projects</div>
             </div>
           </div>
         </div>
@@ -351,8 +351,8 @@ import Footer from '../components/Footer.astro';
         <!-- Search Functionality -->
         <div class="site-search fade-in-up">
           <div class="search-header">
-            <h2>Cari Halaman</h2>
-            <p>Gunakan pencarian untuk menemukan halaman atau konten tertentu</p>
+            <h2 data-i18n="sitemap.search.title">Cari Halaman</h2>
+            <p data-i18n="sitemap.search.subtitle">Gunakan pencarian untuk menemukan halaman atau konten tertentu</p>
           </div>
           <div class="search-container">
             <div class="search-box">
@@ -363,6 +363,7 @@ import Footer from '../components/Footer.astro';
               <input 
                 type="text" 
                 id="siteSearch" 
+                data-i18n-placeholder="sitemap.search.placeholder"
                 placeholder="Cari halaman, layanan, atau konten..."
                 class="search-input"
               />
@@ -865,8 +866,8 @@ import Footer from '../components/Footer.astro';
         } else {
           searchResults.innerHTML = `
             <div class="search-result-item">
-              <div class="result-title">Tidak ada hasil</div>
-              <p class="result-description">Coba gunakan kata kunci yang berbeda</p>
+              <div class="result-title" data-i18n="sitemap.search.noResults">Tidak ada hasil</div>
+              <p class="result-description" data-i18n="sitemap.search.noResultsDesc">Coba gunakan kata kunci yang berbeda</p>
             </div>
           `;
           searchResults.classList.add('active');

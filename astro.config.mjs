@@ -3,6 +3,22 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://ldp-digital-company-rp9t.bolt.host',
-    // Remove base path for Bolt hosting
+    site: 'https://ldpdigital.com',
+    compressHTML: true,
+    build: {
+        inlineStylesheets: 'auto',
+    },
+    vite: {
+        build: {
+            cssMinify: true,
+            minify: 'esbuild',
+            rollupOptions: {
+                output: {
+                    manualChunks: {
+                        vendor: ['astro']
+                    }
+                }
+            }
+        }
+    }
 });

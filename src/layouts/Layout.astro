@@ -20,17 +20,26 @@ const canonicalURL = canonical || currentUrl.href;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon and App Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     
     <!-- Primary Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="keywords" content="software development, ERP system, construction software, custom software, PT Lentera Duta Persada, LDP Digital, operational software, business automation" />
-    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="software development, ERP system, construction software, custom software, PT Lentera Duta Persada, LDP Digital, operational software, business automation, sistem ERP Indonesia, software konstruksi, aplikasi bisnis, digital transformation, enterprise software, manajemen proyek konstruksi, sistem inventory, software akuntansi, aplikasi mobile, web development Jakarta" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="language" content="Indonesian" />
     <meta name="author" content="LDP Digital" />
+    <meta name="geo.region" content="ID-JK" />
+    <meta name="geo.placename" content="Jakarta" />
+    <meta name="geo.position" content="-6.2088;106.8456" />
+    <meta name="ICBM" content="-6.2088, 106.8456" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
@@ -40,7 +49,7 @@ const canonicalURL = canonical || currentUrl.href;
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL('/og-image.jpg', currentUrl.origin).href} />
+    <meta property="og:image" content={new URL('/logo.png', currentUrl.origin).href} />
     <meta property="og:site_name" content="LDP Digital" />
     
     <!-- Twitter -->
@@ -48,37 +57,142 @@ const canonicalURL = canonical || currentUrl.href;
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={new URL('/og-image.jpg', currentUrl.origin).href} />
+    <meta property="twitter:image" content={new URL('/logo.png', currentUrl.origin).href} />
     
-    <!-- Structured Data -->
+    <!-- Enhanced Structured Data for AI Discoverability -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "LDP Digital",
         "legalName": "PT. Lentera Duta Persada",
+        "alternateName": ["LDP Digital", "Lentera Duta Persada"],
         "url": "https://ldpdigital.com",
-        "description": "Software solution partner specializing in internal company software, ERP systems, and custom solutions for construction companies.",
+        "logo": {"@type": "ImageObject", "url": "https://ldpdigital.com/logo.png", "width": "400", "height": "400"},
+        "description": "Leading software development company specializing in ERP systems, custom software solutions, and digital transformation for construction, manufacturing, and retail industries in Indonesia.",
         "foundingDate": "2020",
-        "industry": "Software Development",
-        "areaServed": "Indonesia",
-        "serviceType": [
-          "Software Development",
-          "ERP Implementation", 
-          "Custom Software Solutions",
-          "Business Process Automation"
+        "industry": ["Software Development", "Information Technology", "Digital Transformation"],
+        "areaServed": {
+          "@type": "Country",
+          "name": "Indonesia"
+        },
+        "knowsAbout": [
+          "ERP Systems",
+          "Custom Software Development",
+          "Construction Management Software",
+          "Business Process Automation",
+          "Digital Transformation",
+          "System Integration",
+          "Web Development",
+          "Mobile App Development",
+          "Database Management",
+          "Cloud Solutions"
         ],
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "Construction Companies, Manufacturing, Retail"
-        }
+        "serviceType": [
+          "Enterprise Resource Planning (ERP)",
+          "Custom Software Development",
+          "Business Process Automation",
+          "Digital Transformation Consulting",
+          "System Integration",
+          "Software Maintenance",
+          "Web Application Development",
+          "Mobile Application Development"
+        ],
+        "audience": [
+          {
+            "@type": "Audience",
+            "audienceType": "Construction Companies"
+          },
+          {
+            "@type": "Audience", 
+            "audienceType": "Manufacturing Companies"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Retail Businesses"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Healthcare Organizations"
+          },
+          {
+            "@type": "Audience",
+            "audienceType": "Educational Institutions"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Software Development Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "ERP System Implementation",
+                "description": "Comprehensive Enterprise Resource Planning solutions for business integration"
+              }
+            },
+            {
+              "@type": "Offer", 
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Custom Software Development",
+                "description": "Tailored software solutions designed for specific business requirements"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service", 
+                "name": "Digital Transformation Consulting",
+                "description": "Strategic consulting for business digitalization and process optimization"
+              }
+            }
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+62-21-XXXXXXX",
+          "contactType": "customer service",
+          "email": "info@ldpdigital.com",
+          "availableLanguage": ["Indonesian", "English"]
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/ldp-digital",
+          "https://www.facebook.com/ldpdigital",
+          "https://www.instagram.com/ldpdigital"
+        ]
       }
     </script>
+    
+    <!-- Performance Optimizations -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://images.pexels.com">
     
     <!-- Preload Critical Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    
+    <!-- SEO and Performance Meta Tags -->
+    <meta name="theme-color" content="#0066CC">
+    <meta name="msapplication-TileColor" content="#0066CC">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Google Analytics (Replace GA_MEASUREMENT_ID with your actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
   </head>
   <body>
     <slot />

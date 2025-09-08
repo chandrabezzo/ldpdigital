@@ -25,9 +25,9 @@ import Footer from '../components/Footer.astro';
           <h1 data-i18n="portfolio.hero.title">Portfolio Kami</h1>
           <p class="hero-subtitle" data-i18n="portfolio.hero.subtitle">Proyek-proyek sukses yang telah mengoptimalkan operasional bisnis klien</p>
           <div class="hero-breadcrumb">
-            <a href="/" data-i18n="nav.home">Beranda</a>
+            <a href="/" data-i18n="breadcrumb.home">Beranda</a>
             <span>/</span>
-            <span data-i18n="nav.portfolio">Portfolio</span>
+            <span data-i18n="breadcrumb.portfolio">Portfolio</span>
           </div>
         </div>
       </div>
@@ -40,22 +40,22 @@ import Footer from '../components/Footer.astro';
           <div class="stat-card">
             <div class="stat-number">50+</div>
             <div class="stat-label" data-i18n="portfolio.stats.projects">Proyek Selesai</div>
-            <div class="stat-description">Berbagai skala dan kompleksitas</div>
+            <div class="stat-description" data-i18n="portfolio.stats.projects.desc">Berbagai skala dan kompleksitas</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">30+</div>
             <div class="stat-label" data-i18n="portfolio.stats.clients">Klien Aktif</div>
-            <div class="stat-description">Dari startup hingga enterprise</div>
+            <div class="stat-description" data-i18n="portfolio.stats.clients.desc">Dari startup hingga enterprise</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">95%</div>
             <div class="stat-label" data-i18n="portfolio.stats.satisfaction">Tingkat Kepuasan</div>
-            <div class="stat-description">Berdasarkan feedback klien</div>
+            <div class="stat-description" data-i18n="portfolio.stats.satisfaction.desc">Berdasarkan feedback klien</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">40%</div>
             <div class="stat-label" data-i18n="portfolio.stats.efficiency">Peningkatan Efisiensi</div>
-            <div class="stat-description">Rata-rata improvement</div>
+            <div class="stat-description" data-i18n="portfolio.stats.efficiency.desc">Rata-rata improvement</div>
           </div>
         </div>
       </div>
@@ -94,15 +94,15 @@ import Footer from '../components/Footer.astro';
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                       <circle cx="12" cy="12" r="3"/>
                     </svg>
-                    Lihat Detail
+                    <span data-i18n="common.button.detail">Lihat Detail</span>
                   </button>
                 </div>
               </div>
             </div>
             <div class="portfolio-content">
-              <div class="portfolio-category">ERP System</div>
-              <h3>Sistem ERP Konstruksi Terintegrasi</h3>
-              <p>Platform manajemen proyek konstruksi yang mengintegrasikan keuangan, inventory, dan SDM dalam satu sistem.</p>
+              <div class="portfolio-category" data-i18n="portfolio.category.erp">ERP System</div>
+              <h3 data-i18n="portfolio.project.erp.construction.title">Sistem ERP Konstruksi Terintegrasi</h3>
+              <p data-i18n="portfolio.project.erp.construction.desc">Platform manajemen proyek konstruksi yang mengintegrasikan keuangan, inventory, dan SDM dalam satu sistem.</p>
               <div class="portfolio-tech">
                 <span class="tech-tag">React</span>
                 <span class="tech-tag">Node.js</span>
@@ -111,11 +111,11 @@ import Footer from '../components/Footer.astro';
               <div class="portfolio-results">
                 <div class="result-item">
                   <span class="result-value">40%</span>
-                  <span class="result-label">Efisiensi Meningkat</span>
+                  <span class="result-label" data-i18n="portfolio.result.efficiency">Efisiensi Meningkat</span>
                 </div>
                 <div class="result-item">
                   <span class="result-value">60%</span>
-                  <span class="result-label">Waktu Laporan Berkurang</span>
+                  <span class="result-label" data-i18n="portfolio.result.reporting">Waktu Laporan Berkurang</span>
                 </div>
               </div>
             </div>
@@ -131,15 +131,15 @@ import Footer from '../components/Footer.astro';
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                       <circle cx="12" cy="12" r="3"/>
                     </svg>
-                    Lihat Detail
+                    <span data-i18n="common.button.detail">Lihat Detail</span>
                   </button>
                 </div>
               </div>
             </div>
             <div class="portfolio-content">
-              <div class="portfolio-category">ERP System</div>
-              <h3>ERP Manufaktur & Production Control</h3>
-              <p>Sistem kontrol produksi real-time dengan tracking material, quality control, dan manajemen workforce.</p>
+              <div class="portfolio-category" data-i18n="portfolio.category.erp">ERP System</div>
+              <h3 data-i18n="portfolio.project.erp.manufacturing.title">ERP Manufaktur & Production Control</h3>
+              <p data-i18n="portfolio.project.erp.manufacturing.desc">Sistem kontrol produksi real-time dengan tracking material, quality control, dan manajemen workforce.</p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Vue.js</span>
                 <span class="tech-tag">Python</span>
@@ -148,11 +148,11 @@ import Footer from '../components/Footer.astro';
               <div class="portfolio-results">
                 <div class="result-item">
                   <span class="result-value">35%</span>
-                  <span class="result-label">Waste Reduction</span>
+                  <span class="result-label" data-i18n="portfolio.result.waste">Waste Reduction</span>
                 </div>
                 <div class="result-item">
                   <span class="result-value">50%</span>
-                  <span class="result-label">Faster Reporting</span>
+                  <span class="result-label" data-i18n="portfolio.result.faster">Faster Reporting</span>
                 </div>
               </div>
             </div>
@@ -169,15 +169,15 @@ import Footer from '../components/Footer.astro';
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                       <circle cx="12" cy="12" r="3"/>
                     </svg>
-                    Lihat Detail
+                    <span data-i18n="common.button.detail">Lihat Detail</span>
                   </button>
                 </div>
               </div>
             </div>
             <div class="portfolio-content">
-              <div class="portfolio-category">Custom Software</div>
-              <h3>Smart Inventory Management</h3>
-              <p>Sistem manajemen inventory dengan AI prediction untuk optimasi stock dan automated reorder system.</p>
+              <div class="portfolio-category" data-i18n="portfolio.category.custom">Custom Software</div>
+              <h3 data-i18n="portfolio.project.inventory.title">Smart Inventory Management</h3>
+              <p data-i18n="portfolio.project.inventory.desc">Sistem manajemen inventory dengan AI prediction untuk optimasi stock dan automated reorder system.</p>
               <div class="portfolio-tech">
                 <span class="tech-tag">React</span>
                 <span class="tech-tag">FastAPI</span>
@@ -186,11 +186,11 @@ import Footer from '../components/Footer.astro';
               <div class="portfolio-results">
                 <div class="result-item">
                   <span class="result-value">25%</span>
-                  <span class="result-label">Cost Reduction</span>
+                  <span class="result-label" data-i18n="portfolio.result.cost">Cost Reduction</span>
                 </div>
                 <div class="result-item">
                   <span class="result-value">90%</span>
-                  <span class="result-label">Stock Accuracy</span>
+                  <span class="result-label" data-i18n="portfolio.result.accuracy">Stock Accuracy</span>
                 </div>
               </div>
             </div>
@@ -206,15 +206,15 @@ import Footer from '../components/Footer.astro';
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                       <circle cx="12" cy="12" r="3"/>
                     </svg>
-                    Lihat Detail
+                    <span data-i18n="common.button.detail">Lihat Detail</span>
                   </button>
                 </div>
               </div>
             </div>
             <div class="portfolio-content">
-              <div class="portfolio-category">Custom Software</div>
-              <h3>Customer Relationship Management</h3>
-              <p>CRM system dengan lead tracking, sales pipeline, dan automated marketing untuk meningkatkan konversi.</p>
+              <div class="portfolio-category" data-i18n="portfolio.category.custom">Custom Software</div>
+              <h3 data-i18n="portfolio.project.crm.title">Customer Relationship Management</h3>
+              <p data-i18n="portfolio.project.crm.desc">CRM system dengan lead tracking, sales pipeline, dan automated marketing untuk meningkatkan konversi.</p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Angular</span>
                 <span class="tech-tag">Node.js</span>
@@ -223,11 +223,11 @@ import Footer from '../components/Footer.astro';
               <div class="portfolio-results">
                 <div class="result-item">
                   <span class="result-value">45%</span>
-                  <span class="result-label">Lead Conversion</span>
+                  <span class="result-label" data-i18n="portfolio.result.conversion">Lead Conversion</span>
                 </div>
                 <div class="result-item">
                   <span class="result-value">30%</span>
-                  <span class="result-label">Sales Increase</span>
+                  <span class="result-label" data-i18n="portfolio.result.sales">Sales Increase</span>
                 </div>
               </div>
             </div>
@@ -244,15 +244,15 @@ import Footer from '../components/Footer.astro';
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                       <circle cx="12" cy="12" r="3"/>
                     </svg>
-                    Lihat Detail
+                    <span data-i18n="common.button.detail">Lihat Detail</span>
                   </button>
                 </div>
               </div>
             </div>
             <div class="portfolio-content">
-              <div class="portfolio-category">E-commerce</div>
-              <h3>Platform E-commerce B2B</h3>
-              <p>Platform e-commerce khusus B2B dengan sistem quotation, bulk ordering, dan integrasi payment gateway.</p>
+              <div class="portfolio-category" data-i18n="portfolio.category.ecommerce">E-commerce</div>
+              <h3 data-i18n="portfolio.project.ecommerce.title">Platform E-commerce B2B</h3>
+              <p data-i18n="portfolio.project.ecommerce.desc">Platform e-commerce khusus B2B dengan sistem quotation, bulk ordering, dan integrasi payment gateway.</p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Next.js</span>
                 <span class="tech-tag">Stripe</span>
@@ -261,11 +261,11 @@ import Footer from '../components/Footer.astro';
               <div class="portfolio-results">
                 <div class="result-item">
                   <span class="result-value">200%</span>
-                  <span class="result-label">Online Sales Growth</span>
+                  <span class="result-label" data-i18n="portfolio.result.growth">Online Sales Growth</span>
                 </div>
                 <div class="result-item">
                   <span class="result-value">70%</span>
-                  <span class="result-label">Order Processing Speed</span>
+                  <span class="result-label" data-i18n="portfolio.result.processing">Order Processing Speed</span>
                 </div>
               </div>
             </div>
@@ -281,15 +281,15 @@ import Footer from '../components/Footer.astro';
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                       <circle cx="12" cy="12" r="3"/>
                     </svg>
-                    Lihat Detail
+                    <span data-i18n="common.button.detail">Lihat Detail</span>
                   </button>
                 </div>
               </div>
             </div>
             <div class="portfolio-content">
-              <div class="portfolio-category">Corporate Website</div>
-              <h3>Website Perusahaan Konstruksi</h3>
-              <p>Website corporate dengan portfolio showcase, project gallery, dan sistem inquiry terintegrasi CRM.</p>
+              <div class="portfolio-category" data-i18n="portfolio.category.corporate">Corporate Website</div>
+              <h3 data-i18n="portfolio.project.corporate.title">Website Perusahaan Konstruksi</h3>
+              <p data-i18n="portfolio.project.corporate.desc">Website corporate dengan portfolio showcase, project gallery, dan sistem inquiry terintegrasi CRM.</p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Astro</span>
                 <span class="tech-tag">Tailwind</span>
@@ -298,11 +298,11 @@ import Footer from '../components/Footer.astro';
               <div class="portfolio-results">
                 <div class="result-item">
                   <span class="result-value">300%</span>
-                  <span class="result-label">Web Traffic Increase</span>
+                  <span class="result-label" data-i18n="portfolio.result.traffic">Web Traffic Increase</span>
                 </div>
                 <div class="result-item">
                   <span class="result-value">85%</span>
-                  <span class="result-label">Lead Quality Improvement</span>
+                  <span class="result-label" data-i18n="portfolio.result.quality">Lead Quality Improvement</span>
                 </div>
               </div>
             </div>
@@ -319,15 +319,15 @@ import Footer from '../components/Footer.astro';
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                       <circle cx="12" cy="12" r="3"/>
                     </svg>
-                    Lihat Detail
+                    <span data-i18n="common.button.detail">Lihat Detail</span>
                   </button>
                 </div>
               </div>
             </div>
             <div class="portfolio-content">
-              <div class="portfolio-category">Mobile App</div>
-              <h3>Field Management Mobile App</h3>
-              <p>Aplikasi mobile untuk manajemen lapangan dengan GPS tracking, photo reporting, dan offline capability.</p>
+              <div class="portfolio-category" data-i18n="portfolio.category.mobile">Mobile App</div>
+              <h3 data-i18n="portfolio.project.field.title">Field Management Mobile App</h3>
+              <p data-i18n="portfolio.project.field.desc">Aplikasi mobile untuk manajemen lapangan dengan GPS tracking, photo reporting, dan offline capability.</p>
               <div class="portfolio-tech">
                 <span class="tech-tag">React Native</span>
                 <span class="tech-tag">Firebase</span>
@@ -336,11 +336,11 @@ import Footer from '../components/Footer.astro';
               <div class="portfolio-results">
                 <div class="result-item">
                   <span class="result-value">60%</span>
-                  <span class="result-label">Faster Reporting</span>
+                  <span class="result-label" data-i18n="portfolio.result.faster">Faster Reporting</span>
                 </div>
                 <div class="result-item">
                   <span class="result-value">100%</span>
-                  <span class="result-label">Real-time Visibility</span>
+                  <span class="result-label" data-i18n="portfolio.result.visibility">Real-time Visibility</span>
                 </div>
               </div>
             </div>
@@ -356,15 +356,15 @@ import Footer from '../components/Footer.astro';
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                       <circle cx="12" cy="12" r="3"/>
                     </svg>
-                    Lihat Detail
+                    <span data-i18n="common.button.detail">Lihat Detail</span>
                   </button>
                 </div>
               </div>
             </div>
             <div class="portfolio-content">
-              <div class="portfolio-category">Mobile App</div>
-              <h3>Logistics & Delivery Tracking</h3>
-              <p>Aplikasi tracking pengiriman dengan real-time GPS, proof of delivery, dan customer notification system.</p>
+              <div class="portfolio-category" data-i18n="portfolio.category.mobile">Mobile App</div>
+              <h3 data-i18n="portfolio.project.logistics.title">Logistics & Delivery Tracking</h3>
+              <p data-i18n="portfolio.project.logistics.desc">Aplikasi tracking pengiriman dengan real-time GPS, proof of delivery, dan customer notification system.</p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Flutter</span>
                 <span class="tech-tag">Firebase</span>
@@ -373,11 +373,11 @@ import Footer from '../components/Footer.astro';
               <div class="portfolio-results">
                 <div class="result-item">
                   <span class="result-value">80%</span>
-                  <span class="result-label">Delivery Accuracy</span>
+                  <span class="result-label" data-i18n="portfolio.result.delivery">Delivery Accuracy</span>
                 </div>
                 <div class="result-item">
                   <span class="result-value">50%</span>
-                  <span class="result-label">Customer Complaints Reduced</span>
+                  <span class="result-label" data-i18n="portfolio.result.complaints">Customer Complaints Reduced</span>
                 </div>
               </div>
             </div>
@@ -730,6 +730,7 @@ import Footer from '../components/Footer.astro';
     font-size: 1.5rem;
     margin-bottom: var(--spacing-md);
     opacity: 0.9;
+    color: white;
   }
 
   .hero-breadcrumb {
@@ -1296,6 +1297,7 @@ import Footer from '../components/Footer.astro';
     margin-right: auto;
     opacity: 0.95;
     line-height: 1.6;
+    color: white;
   }
 
   .cta-actions {

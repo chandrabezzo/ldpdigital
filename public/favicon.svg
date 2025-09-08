@@ -1,6 +1,20 @@
 <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="40" height="40" rx="8" fill="url(#logoGradient)"/>
-  <path d="M12 12h16v4H12v-4zM12 18h16v4H12v-4zM12 24h12v4H12v-4z" fill="white"/>
+  <!-- LDP Digital Logo Elements -->
+  <g transform="translate(8, 8)">
+    <!-- L -->
+    <rect x="2" y="2" width="2" height="18" fill="white"/>
+    <rect x="2" y="18" width="6" height="2" fill="white"/>
+    <!-- D -->
+    <rect x="10" y="2" width="2" height="18" fill="white"/>
+    <path d="M12 2h6c2.2 0 4 1.8 4 4v10c0 2.2-1.8 4-4 4h-6V2z" fill="white"/>
+    <path d="M14 4v14h4c1.1 0 2-0.9 2-2V6c0-1.1-0.9-2-2-2h-4z" fill="url(#logoGradient)"/>
+    <!-- P -->
+    <rect x="24" y="2" width="2" height="18" fill="white"/>
+    <rect x="26" y="2" width="4" height="2" fill="white"/>
+    <rect x="26" y="10" width="4" height="2" fill="white"/>
+    <rect x="30" y="4" width="2" height="6" fill="white"/>
+  </g>
   <defs>
     <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40">
       <stop stop-color="#0066CC"/>

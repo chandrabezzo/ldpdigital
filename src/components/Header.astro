@@ -12,22 +12,7 @@ const currentPath = pathname.slice(1);
       <div class="nav-content">
         <div class="logo">
           <a href="/" class="logo-link">
-            <div class="logo-icon">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="40" height="40" rx="8" fill="url(#logoGradient)"/>
-                <path d="M12 12h16v4H12v-4zM12 18h16v4H12v-4zM12 24h12v4H12v-4z" fill="white"/>
-                <defs>
-                  <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40">
-                    <stop stop-color="#0066CC"/>
-                    <stop offset="1" stop-color="#003D7A"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <div class="logo-text">
-              <div class="brand-name">LDP Digital</div>
-              <div class="tagline">Software Solutions</div>
-            </div>
+            <img src="/logo.png" alt="LDP Digital Logo" class="logo-img" />
           </a>
         </div>
 
@@ -40,6 +25,26 @@ const currentPath = pathname.slice(1);
         </div>
 
         <div class="nav-actions">
+          <!-- Language Switcher -->
+          <div class="language-switcher">
+            <button class="lang-btn" id="langBtn" aria-label="Switch language">
+              <span class="lang-flag" id="currentLangFlag">🇮🇩</span>
+              <span class="lang-text" id="currentLangText">ID</span>
+              <svg class="lang-arrow" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="lang-dropdown" id="langDropdown">
+              <button class="lang-option" data-lang="id">
+                <span class="lang-flag">🇮🇩</span>
+                <span>Bahasa Indonesia</span>
+              </button>
+              <button class="lang-option" data-lang="en">
+                <span class="lang-flag">🇺🇸</span>
+                <span>English</span>
+              </button>
+            </div>
+          </div>
           <a href="/contact" class="btn btn-primary" data-i18n="nav.consultation">Konsultasi Gratis</a>
         </div>
 
@@ -60,22 +65,7 @@ const currentPath = pathname.slice(1);
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-header">
       <div class="mobile-logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="40" height="40" rx="8" fill="url(#mobileLogoGradient)"/>
-            <path d="M12 12h16v4H12v-4zM12 18h16v4H12v-4zM12 24h12v4H12v-4z" fill="white"/>
-            <defs>
-              <linearGradient id="mobileLogoGradient" x1="0" y1="0" x2="40" y2="40">
-                <stop stop-color="#0066CC"/>
-                <stop offset="1" stop-color="#003D7A"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="mobile-brand">
-          <div class="brand-name">LDP Digital</div>
-          <div class="tagline">Software Solutions</div>
-        </div>
+        <img src="/logo.png" alt="LDP Digital Logo" class="mobile-logo-img" />
       </div>
       <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -108,6 +98,21 @@ const currentPath = pathname.slice(1);
           <span>Kontak</span>
         </a>
       </nav>
+      
+      <!-- Mobile Language Switcher -->
+      <div class="mobile-language-switcher">
+        <h4>Language / Bahasa</h4>
+        <div class="mobile-lang-options">
+          <button class="mobile-lang-option" data-lang="id">
+            <span class="lang-flag">🇮🇩</span>
+            <span>Bahasa Indonesia</span>
+          </button>
+          <button class="mobile-lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>English</span>
+          </button>
+        </div>
+      </div>
       
       <div class="mobile-cta">
         <a href="/contact" class="mobile-cta-btn" data-i18n="nav.consultation">
@@ -182,13 +187,15 @@ const currentPath = pathname.slice(1);
   }
 
   .logo-img {
-    width: 90px;
+    width: 120px;
     height: 35px;
+    object-fit: contain;
   }
 
-  .logo-text {
-    display: flex;
-    flex-direction: column;
+  .mobile-logo-img {
+    width: 120px;
+    height: 35px;
+    object-fit: contain;
   }
 
   .brand-name {
@@ -471,6 +478,160 @@ const currentPath = pathname.slice(1);
     width: 16px;
     height: 16px;
   }
+
+  /* Language Switcher Styles */
+  .language-switcher {
+    position: relative;
+    display: inline-block;
+  }
+
+  .lang-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--neutral-50);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--neutral-700);
+  }
+
+  .lang-btn:hover {
+    background: var(--neutral-100);
+    border-color: var(--neutral-300);
+  }
+
+  .lang-btn.active {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+  }
+
+  .lang-flag {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .lang-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .lang-arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease;
+  }
+
+  .lang-btn.active .lang-arrow {
+    transform: rotate(180deg);
+  }
+
+  .lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    background: white;
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+    z-index: 1000;
+    margin-top: 4px;
+  }
+
+  .lang-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    color: var(--neutral-700);
+  }
+
+  .lang-option:hover {
+    background: var(--neutral-50);
+    color: var(--primary-blue);
+  }
+
+  .lang-option.active {
+    background: var(--primary-blue);
+    color: white;
+  }
+
+  .lang-option:first-child {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .lang-option:last-child {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+
+  /* Mobile Language Switcher */
+  .mobile-language-switcher {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--neutral-200);
+  }
+
+  .mobile-language-switcher h4 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--neutral-800);
+  }
+
+  .mobile-lang-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .mobile-lang-option {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: none;
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    color: var(--neutral-700);
+    text-align: left;
+  }
+
+  .mobile-lang-option:hover {
+    background: var(--neutral-50);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+  }
+
+  .mobile-lang-option.active {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: white;
+  }
   @media (max-width: 768px) {
     .nav-links {
       display: none;
@@ -484,7 +645,7 @@ const currentPath = pathname.slice(1);
       display: flex;
     }
 
-    .logo-text {
+    .language-switcher {
       display: none;
     }
 
@@ -515,6 +676,10 @@ const currentPath = pathname.slice(1);
     // Initialize language
     const currentLang = getCurrentLanguage();
     updatePageLanguage(currentLang);
+    updateLanguageSwitcher(currentLang);
+
+    // Language switcher functionality
+    initializeLanguageSwitcher();
 
     // Header scroll effect
     let lastScroll = 0;
@@ -580,8 +745,91 @@ const currentPath = pathname.slice(1);
     // Listen for language changes
     window.addEventListener('languageChanged', (e) => {
       updatePageLanguage(e.detail);
+      updateLanguageSwitcher(e.detail);
     });
   });
+
+  function initializeLanguageSwitcher() {
+    const langBtn = document.getElementById('langBtn');
+    const langDropdown = document.getElementById('langDropdown');
+    const langOptions = document.querySelectorAll('.lang-option');
+    const mobileLangOptions = document.querySelectorAll('.mobile-lang-option');
+
+    // Desktop language switcher
+    if (langBtn && langDropdown) {
+      langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langBtn.classList.toggle('active');
+        langDropdown.classList.toggle('active');
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', () => {
+        langBtn?.classList.remove('active');
+        langDropdown?.classList.remove('active');
+      });
+
+      // Handle language selection
+      langOptions.forEach(option => {
+        option.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const selectedLang = option.getAttribute('data-lang');
+          if (selectedLang) {
+            setLanguage(selectedLang);
+            langBtn?.classList.remove('active');
+            langDropdown?.classList.remove('active');
+          }
+        });
+      });
+    }
+
+    // Mobile language switcher
+    mobileLangOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        const selectedLang = option.getAttribute('data-lang');
+        if (selectedLang) {
+          setLanguage(selectedLang);
+        }
+      });
+    });
+  }
+
+  function updateLanguageSwitcher(lang) {
+    const currentLangFlag = document.getElementById('currentLangFlag');
+    const currentLangText = document.getElementById('currentLangText');
+    const langOptions = document.querySelectorAll('.lang-option');
+    const mobileLangOptions = document.querySelectorAll('.mobile-lang-option');
+
+    // Update desktop switcher
+    if (currentLangFlag && currentLangText) {
+      if (lang === 'en') {
+        currentLangFlag.textContent = '🇺🇸';
+        currentLangText.textContent = 'EN';
+      } else {
+        currentLangFlag.textContent = '🇮🇩';
+        currentLangText.textContent = 'ID';
+      }
+    }
+
+    // Update active states
+    langOptions.forEach(option => {
+      const optionLang = option.getAttribute('data-lang');
+      if (optionLang === lang) {
+        option.classList.add('active');
+      } else {
+        option.classList.remove('active');
+      }
+    });
+
+    mobileLangOptions.forEach(option => {
+      const optionLang = option.getAttribute('data-lang');
+      if (optionLang === lang) {
+        option.classList.add('active');
+      } else {
+        option.classList.remove('active');
+      }
+    });
+  }
 
   function updatePageLanguage(lang) {
     // Update all elements with data-i18n attribute
