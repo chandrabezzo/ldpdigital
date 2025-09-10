@@ -5,7 +5,7 @@ import { defineConfig } from 'astro/config';
 function getConfig() {
     const isDev = process.env.NODE_ENV === 'development';
     const isGitHubPages = process.env.GITHUB_ACTIONS === 'true' || process.env.DEPLOY_TARGET === 'github';
-    
+
     if (isDev) {
         // Development environment
         return {
@@ -13,10 +13,10 @@ function getConfig() {
             base: '/'
         };
     } else if (isGitHubPages) {
-        // GitHub Pages deployment
+        // GitHub Pages deployment with custom domain
         return {
-            site: 'https://chandrabezzo.github.io',
-            base: '/ldpdigital'
+            site: 'https://ldpdigital.co.id',
+            base: '/'
         };
     } else {
         // Production domain
