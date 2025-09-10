@@ -35,6 +35,9 @@ jobs:
         env:
           DEPLOY_TARGET: github
 
+      - name: Add CNAME to artifact
+        run: echo "ldpdigital.co.id" > ./dist/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
