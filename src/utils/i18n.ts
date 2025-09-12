@@ -16,12 +16,12 @@ export const translations: Translations = {
 
   // Hero Section
   'hero.title': {
-    en: 'Integrated Software Solutions for Your Business',
-    id: 'Solusi Software Terpadu untuk Masa Depan Bisnis Anda'
+    en: 'Integrated Software Solutions for',
+    id: 'Solusi Software Terpadu untuk'
   },
   'hero.subtitle': {
-    en: 'Future',
-    id: 'Masa Depan Bisnis'
+    en: 'The Future of Your Business',
+    id: 'Masa Depan Bisnis Anda'
   },
   'hero.description': {
     en: 'LDP Digital is your trusted partner in digital transformation. We build ERP systems, custom software, and technology solutions that optimize your business operations.',
@@ -384,6 +384,10 @@ export const translations: Translations = {
   'contact.faq.question1': { en: 'How long does it take to develop a software?', id: 'Berapa lama waktu pengembangan software?' },
   'contact.faq.answer1': { en: 'The development time depends on the complexity of the project and the scope of work.', id: 'Waktu pengembangan tergantung pada kompleksitas proyek dan skop kerja.' },
   'contact.faq.question2': { en: 'Is there a warranty for the developed software?', id: 'Apakah ada garansi untuk software yang dikembangkan?' },
+
+  // Contact form alerts
+  'contact.form.alert.success': { en: 'You will be redirected to WhatsApp to send the message. Thank you!', id: 'Anda akan diarahkan ke WhatsApp untuk mengirim pesan. Terima kasih!' },
+  'contact.form.alert.error': { en: 'Sorry, an error occurred. Please try again or contact us directly.', id: 'Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi kami langsung.' },
   'contact.faq.answer2': { en: 'Yes, we offer a warranty of 3 months for bug fixing and basic maintenance. After the warranty period, we offer maintenance packages at various options based on your needs.', id: 'Ya, kami menawarkan garansi 3 bulan untuk bug fixing dan maintenance dasar. Setelah periode garansi, tersedia paket maintenance dengan berbagai pilihan sesuai kebutuhan.' },
   'contact.faq.question3': { en: 'What payment methods are available?', id: 'Metode pembayaran apa yang tersedia?' },
   'contact.faq.answer3': { en: 'We accept bank transfer, credit card, and cash on delivery.', id: 'Kami menerima transfer bank, kartu kredit, dan pembayaran COD.' },

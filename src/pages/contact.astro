@@ -162,6 +162,12 @@ import Footer from '../components/Footer.astro';
                 </span>
               </button>
             </form>
+            
+            <!-- Hidden elements for i18n alert messages -->
+            <div style="display: none;">
+              <span data-i18n="contact.form.alert.success">Anda akan diarahkan ke WhatsApp untuk mengirim pesan. Terima kasih!</span>
+              <span data-i18n="contact.form.alert.error">Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi kami langsung.</span>
+            </div>
           </div>
 
           <!-- Contact Info -->
@@ -958,15 +964,74 @@ import Footer from '../components/Footer.astro';
       btnLoading.style.display = 'flex';
       submitBtn.disabled = true;
 
-      // Simulate form submission (replace with actual API call)
       try {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Collect form data
+        const formData = new FormData(contactForm);
         
-        // Show success message
-        alert('Terima kasih! Pesan Anda telah terkirim. Tim kami akan menghubungi Anda dalam 24 jam.');
+        // Get selected services
+        const selectedServices = [];
+        const serviceCheckboxes = contactForm.querySelectorAll('input[name="services"]:checked');
+        serviceCheckboxes.forEach(checkbox => {
+          const serviceText = checkbox.parentElement.querySelector('span:last-child').textContent;
+          selectedServices.push(serviceText);
+        });
+
+        // Get industry and budget text values
+        const industrySelect = document.getElementById('industry');
+        const budgetSelect = document.getElementById('budget');
+        const industryText = industrySelect.options[industrySelect.selectedIndex]?.text || '';
+        const budgetText = budgetSelect.options[budgetSelect.selectedIndex]?.text || '';
+
+        // Format WhatsApp message
+        let message = `*KONSULTASI SOFTWARE - LDP DIGITAL*\n\n`;
+        message += `*Informasi Kontak:*\n`;
+        message += `• Nama: ${formData.get('firstName')} ${formData.get('lastName')}\n`;
+        message += `• Email: ${formData.get('email')}\n`;
+        message += `• Telepon: ${formData.get('phone') || 'Tidak diisi'}\n`;
+        message += `• Perusahaan: ${formData.get('company')}\n\n`;
+        
+        if (industryText && industryText !== 'Pilih Industri') {
+          message += `*Industri:* ${industryText}\n`;
+        }
+        
+        if (budgetText && budgetText !== 'Pilih Budget') {
+          message += `*Budget Range:* ${budgetText}\n`;
+        }
+        
+        if (selectedServices.length > 0) {
+          message += `\n*Layanan yang Dibutuhkan:*\n`;
+          selectedServices.forEach(service => {
+            message += `• ${service}\n`;
+          });
+        }
+        
+        if (formData.get('message')) {
+          message += `\n*Deskripsi Proyek:*\n${formData.get('message')}\n`;
+        }
+        
+        message += `\n---\n*Dikirim melalui website LDP Digital*`;
+
+        // Encode message for URL
+        const encodedMessage = encodeURIComponent(message);
+        
+        // WhatsApp URL
+        const whatsappUrl = `https://wa.me/+6285183119529?text=${encodedMessage}`;
+        
+        // Simulate brief loading then redirect
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+        // Open WhatsApp
+        window.open(whatsappUrl, '_blank');
+        
+        // Show success message and reset form
+        const successMessage = document.querySelector('[data-i18n="contact.form.alert.success"]')?.textContent || 'Anda akan diarahkan ke WhatsApp untuk mengirim pesan. Terima kasih!';
+        alert(successMessage);
         contactForm.reset();
+        
       } catch (error) {
-        alert('Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi kami langsung.');
+        console.error('Error:', error);
+        const errorMessage = document.querySelector('[data-i18n="contact.form.alert.error"]')?.textContent || 'Maaf, terjadi kesalahan. Silakan coba lagi atau hubungi kami langsung.';
+        alert(errorMessage);
       } finally {
         // Reset button state
         btnText.style.display = 'inline';
