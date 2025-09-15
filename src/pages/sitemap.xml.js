@@ -6,55 +6,67 @@ export async function GET({ site }) {
       url: '',
       changefreq: 'weekly',
       priority: '1.0',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
     },
     {
       url: 'about',
       changefreq: 'monthly',
       priority: '0.8',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
     },
     {
       url: 'contact',
       changefreq: 'monthly',
       priority: '0.9',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
     },
     {
       url: 'services',
       changefreq: 'monthly',
       priority: '0.9',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
     },
     {
       url: 'portfolio',
       changefreq: 'monthly',
       priority: '0.8',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
+    },
+    {
+      url: 'privacy',
+      changefreq: 'yearly',
+      priority: '0.3',
+      lastmod: '2025-09-15'
+    },
+    {
+      url: 'terms',
+      changefreq: 'yearly',
+      priority: '0.3',
+      lastmod: '2025-09-15'
     },
     {
       url: 'industries/construction',
       changefreq: 'monthly',
       priority: '0.7',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
     },
     {
       url: 'services/erp',
       changefreq: 'monthly',
       priority: '0.7',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
     },
     {
       url: 'services/custom-software',
       changefreq: 'monthly',
       priority: '0.7',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
     },
     {
       url: 'services/consulting',
       changefreq: 'monthly',
       priority: '0.7',
-      lastmod: '2025-01-08'
+      lastmod: '2025-09-15'
     }
   ];
 
@@ -67,7 +79,7 @@ export async function GET({ site }) {
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 ${pages.map(page => `  
   <url>
-    <loc>${siteUrl}${page.url ? '/' + page.url : '/'}</loc>
+    <loc>${siteUrl}${page.url ? '/' + page.url : ''}</loc>
     <lastmod>${page.lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
