@@ -9,6 +9,7 @@ export const translations: Translations = {
   // Navigation
   'nav.home': { en: 'Home', id: 'Beranda' },
   'nav.about': { en: 'About Us', id: 'Tentang Kami' },
+  'nav.newsArticle': { en: 'News & Article', id: 'Berita & Artikel' },
   'nav.services': { en: 'Services', id: 'Layanan' },
   'nav.portfolio': { en: 'Portfolio', id: 'Portfolio' },
   'nav.contact': { en: 'Contact', id: 'Kontak' },
